@@ -1,0 +1,15 @@
+.title{ 
+    background: linear-gradient(
+    90deg,
+    #08374A,
+    #005851,
+    #092936,
+    #005851
+  );
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
