@@ -79,7 +79,7 @@ const Home = () => {
       <div>
         Hello
       </div>
-      {/* <CarouselSize/> */}
+      <CarouselSize/>
     </div>
   )
 }
