@@ -7,7 +7,7 @@ const navigationItems = [
   { name: 'Home', href: '/' },
   { name: 'Services', href: '/services' },
   { name: 'Experience', href: '/experience' },
-  { name: 'Recommendations', href: '/recommendations' },
+  { name: 'Projects', href: '/recommendations' },
   { name: 'CV', href: '/certifications' },
   { name: 'Contact', href: '/contact' },
 ];

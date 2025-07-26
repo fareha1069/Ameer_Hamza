@@ -13,6 +13,7 @@ import Recommendation from './Components/Recommendation'
 import Certifications from './Components/Certifications'
 import Education from './Components/Education'
 import Contact from './Components/Contact'
+// import Servicediv from './Components/Servicediv'
 import { color, motion, useScroll } from "motion/react"
 import { div } from 'motion/react-client';
 
@@ -98,7 +99,10 @@ function App() {
   return (
     <div>
         <RouterProvider router={router} />
+      
     </div>
+
+    
   )
 }
 

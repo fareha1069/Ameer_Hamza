@@ -6,11 +6,12 @@ import { motion as Motion } from 'motion/react';
 import { Icon } from '@iconify/react';
 import './Intro.css';
 import AnimatedBackground from './AnimatedBackground'; // import the new background
+// import Servicediv from './Servicediv'
 
 const Intro = () => {
   return (
-    <div
-      className="intro flex flex-col lg:flex-row items-center  justify-around bg-[#648999] relative overflow-hidden "
+        <div
+      className="intro flex flex-col lg:flex-row items-center justify-around bg-[#648999] relative overflow-hidden "
       style={{ backgroundImage: `url(${bg})` }}
     >
       {/* Animated Background circles */}
@@ -47,7 +48,7 @@ const Intro = () => {
           </p>
         </div>
         <Motion.div
-          className="flex gap-4 mt-4"
+          className="flex gap-4 mt-4 mb-7"
           initial={{ y: 80, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, ease: 'easeOut' }}
@@ -66,7 +67,11 @@ const Intro = () => {
           </a>
         </Motion.div>
       </div>
+      
     </div>
+
+     
+  
   );
 };
 

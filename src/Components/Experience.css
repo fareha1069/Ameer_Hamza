@@ -1,0 +1,5 @@
+/* Slow down bounce-in animation */
+.vertical-timeline-element-content.bounce-in {
+  animation-duration: 2s !important;
+  animation-timing-function: ease-out !important;
+}
