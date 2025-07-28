@@ -58,7 +58,7 @@ function Navbar() {
                   ref={(el) => (navRefs.current[index] = el)}
                   onMouseEnter={() => setHoverTab(item.name)}
                   onMouseLeave={() => setHoverTab(null)}
-                  className={`px-3 py-3 font-medium text-xl cursor-pointer ${
+                  className={`px-3 py-3 font-medium text-[18px] cursor-pointer ${
                     isCurrent ? 'text-white' : 'text-gray-300 hover:text-white'
                   }`}
                 >

@@ -17,23 +17,24 @@ const Intro = () => {
       {/* Animated Background circles */}
       <AnimatedBackground />
 
-      <div className="pic flex justify-end items-end w-[75vw] md:w-[60vw] lg:w-[35vw] z-10">
+      <div className="pic flex justify-end items-end w-[70vw] md:w-[50vw] lg:w-[40vw] z-10">
         <Motion.img
           src={Pic}
           alt="Hamza Bhai"
-          className="image my-[3%] pb-[1%] border-b-[3px] border-[#08374A] rounded-[10%]"
+          className="image my-[3%] w-[65vw] md:w-[50vw] lg:w-[25vw] self-end pb-[1%] border-b-[3px] border-[#08374A] rounded-[10%]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 2.5, ease: 'easeInOut' }}
         />
       </div>
     {/* <div>{}</div> */}
-      <div className="introduce lg:w-[50vw] w-[90vw] z-10">
+      <div className="introduce lg:w-[50vw] w-[90vw] z-10 my-3 mt-6">
         <div>
           <p className="txt text-xl font-semibold text-[#CCD8DC] w-[40vw]">Hello I'm</p>
-          <p className="name text-4xl font-semibold text-[#092936]">Ameer Hamza</p>
+          <p className="name text-3xl md:text-5xl font-semibold text-[#092936]" style={{ fontFamily: "Oswald, monospace" }}>Ameer Hamza</p>
           <Motion.h1
-            className="title text-4xl lg:text-5xl font-bold leading-[1.5] bg-clip-text text-transparent inline-block bg-[length:300%_300%] mb-2"
+            className="title text-3xl md:text-5xl font-bold leading-[1.5] bg-clip-text text-transparent inline-block bg-[length:300%_300%] mb-2"
+            style={{ fontFamily: "Oswald, monospace" }}
             animate={{ backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'] }}
             transition={{
               duration: 3,
@@ -44,7 +45,7 @@ const Intro = () => {
             Supply Chain Strategist
           </Motion.h1>
           <p className="txt text-xl font-medium text-[#CCD8DC] lg:w-[40vw]">
-            Strategic Supply Chain Manager with 4+ years of experience driving operational efficiency Strategic Supply Chain Manager with 4+ years of experience driving operational efficiency
+            Strategic Supply Chain Manager with 4+ years of experience driving operational efficiency Strategic Supply Chain Manager with 4+ years of experience driving operational efficiency Strategic Supply Chain Manager with 4+ years of experience driving operational efficiency Strategic Supply Chain Manager with 4+ years of experience driving operational efficiency Strategic Supply Chain Manager with 4+ years of experience driving operational efficiency Strategic Supply Chain Manager with 4+ years of experience driving operational efficiency
           </p>
         </div>
         <Motion.div
