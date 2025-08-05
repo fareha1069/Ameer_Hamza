@@ -16,6 +16,13 @@ import Contact from './Components/Contact'
 // import Servicediv from './Components/Servicediv'
 import { color, motion, useScroll } from "motion/react"
 import { div } from 'motion/react-client';
+import AmazonFba from './Components/AllServices/AmazonFba';
+import AmazonInventory from './Components/AllServices/AmazonInventory';
+import DTCSupplyChain from './Components/AllServices/DTCSupplyChain';
+import DemandForecasting from './Components/AllServices/DemandForecasting';
+import LogisticOperations from './Components/AllServices/LogisticOperations';
+import OrderManagement from './Components/AllServices/OrderManagement';
+import PLOperations from './Components/AllServices/PLOperations';
 
 const router = createBrowserRouter(
   [
@@ -83,14 +90,72 @@ const router = createBrowserRouter(
       </div>
     },
 
-     {
+    {
       path:"/contact",
-      element :  
+      element :
       <div>
         <Navbar/>
         <Contact />
       </div>
     },
+    //services pages
+    {
+      path:"/amazonFba",
+      element :
+      <div>
+        <Navbar/>
+        <AmazonFba />
+      </div>
+    },
+    {
+      path:"/amazonInventory",
+      element :
+      <div>
+        <Navbar/>
+        <AmazonInventory />
+      </div>
+    },
+    {
+      path:"/demandForecasting",
+      element :
+      <div>
+        <Navbar/>
+        <DemandForecasting />
+      </div>
+    },
+    {
+      path:"/DTCSupplyChain",
+      element :
+      <div>
+        <Navbar/>
+        <DTCSupplyChain />
+      </div>
+    },
+    {
+      path:"/logisticOperations",
+      element :
+      <div>
+        <Navbar/>
+        <LogisticOperations />
+      </div>
+    },
+    {
+      path:"/orderManagement",
+      element :
+      <div>
+        <Navbar/>
+        <OrderManagement />
+      </div>
+    },
+    {
+      path:"/PlOperations",
+      element :
+      <div>
+        <Navbar/>
+        <PLOperations />
+      </div>
+    },
+
 ])
 
 
