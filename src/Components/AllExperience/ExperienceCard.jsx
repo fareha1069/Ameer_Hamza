@@ -6,13 +6,13 @@ const ExperienceCard = ({ experience = {} }) => {
   return (
     // <div className="max-w-7xl mx-auto overflow-hidden rounded-2xl shadow-xl p-6 md:p-10 bg-white transition-shadow hover:shadow-2xl duration-300">
     <Motion.div
-     className="max-w-7xl mx-auto overflow-hidden rounded-2xl shadow-[0_25px_60px_-15px_rgba(0,0,0,0.3)] mr-2 ml-2 p-2 md:p-10 md:mr-5 ml-5 bg-[#D6DFE2] transition-shadow hover:shadow-[0_30px_70px_-10px_rgba(0,0,0,0.4)] duration-300"
- initial={{ opacity: 0, y: 40 }}
+      className="max-w-7xl mx-auto overflow-hidden rounded-2xl shadow-[0_5px_30px_-15px_rgba(0,0,0,0.3)] mb-9 mr-2 ml-2 p-4 pt-5 pb-5 md:p-10 md:mr-5 md:ml-5 bg-[#D6DFE2] transition-shadow hover:shadow-[0_10px_40px_-10px_rgba(0,0,0,0.4)] duration-300"
+      initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       whileHover={{ scale: 1.01 }}
 
-         style={{ backgroundImage: `url(${bg})` }}
+      style={{ backgroundImage: `url(${bg})` }}
     >
 
       <div className="flex flex-col md:flex-row gap-10">
