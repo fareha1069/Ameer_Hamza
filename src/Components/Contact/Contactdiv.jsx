@@ -1,8 +1,8 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import bg from "../assets/bg.png";
+import bg from "../../assets/bg.png";
 import { motion as Motion } from "motion/react";
-import { Card, CardContent } from "../@/components/ui/card";
+import { Card, CardContent } from "../../@/components/ui/card";
 import { Icon } from "@iconify/react";
 
 const Contactdiv = () => {

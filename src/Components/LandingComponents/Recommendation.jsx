@@ -1,20 +1,20 @@
 "use client";
 
-import bg from "../assets/bg.png";
+import bg from "../../assets/bg.png";
 import { motion as Motion } from "motion/react";
 import { useState, useEffect } from "react";
 
 import * as React from "react";
 import Autoplay from "embla-carousel-autoplay";
 
-import { Card, CardContent } from "../@/components/ui/card";
+import { Card, CardContent } from "../../@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "../@/components/ui/carousel";
+} from "../../@/components/ui/carousel";
 
 import { Document, Page, pdfjs } from "react-pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(

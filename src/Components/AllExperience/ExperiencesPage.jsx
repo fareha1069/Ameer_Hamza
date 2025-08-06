@@ -213,9 +213,6 @@ const ExperiencesPage = () => {
         "Warehouse Management Systems"
       ]
     }
-
-
-
   ];
 
   return (

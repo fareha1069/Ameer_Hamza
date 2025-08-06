@@ -4,14 +4,14 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { BrowserRouter ,Routes , Route, createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Navbar  from './Components/Navbar'
-import Project from './Components/Project'
-import Services from './Components/Services'
-import Home from './Components/Home'
-import Recommendation from './Components/Recommendation'
-import Certifications from './Components/Certifications'
-import Education from './Components/Education'
-import Contact from './Components/Contact'
+import Navbar  from './Components/LandingComponents/Navbar'
+import Project from './Components/AllProjects/Project'
+import Services from './Components/AllServices/Services'
+import Home from './Components/LandingComponents/Home'
+import Recommendation from './Components/LandingComponents/Recommendation'
+import Certifications from './Components/CV/Certifications'
+import Education from './Components/CV/Education'
+import Contact from './Components/Contact/Contact'
 // import Servicediv from './Components/Servicediv'
 import { color, motion, useScroll } from "motion/react"
 import { div } from 'motion/react-client';
@@ -38,7 +38,7 @@ const router = createBrowserRouter(
 
      {
       path:"/services",
-      element :  
+      element :
       <div>
         <Navbar/>
         <Services />

@@ -3,8 +3,8 @@ import {motion as Motion} from 'motion/react'
 import { VerticalTimeline, VerticalTimelineElement,} from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { BriefcaseIcon } from "@heroicons/react/24/solid";
-import bg from "../assets/bg.png"; 
-import "../Components/Experience.css";
+import bg from "../../assets/bg.png"; 
+import "../../Components/AllExperience/Experience.css";
 
 const Experience = ({ experiences = [] }) => {
   return (
