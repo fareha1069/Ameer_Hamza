@@ -15,6 +15,7 @@ import company1 from '../assets/compani1.jpg'
 import company2 from '../assets/company2.jpg'
 import company3 from '../assets/company3.jpg'
 import ridge from '../assets/ridge.pdf'
+import Pagal from './Pagal.jsx'
 // import Pagal from './Pagal.jsx'
 
 // import { ImageIcon } from 'lucide-react'

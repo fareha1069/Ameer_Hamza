@@ -8,7 +8,6 @@ import Navbar  from './Components/Navbar'
 import Project from './Components/Project'
 import Services from './Components/Services'
 import Home from './Components/Home'
-import Experience from './Components/Experieence'
 import Recommendation from './Components/Recommendation'
 import Certifications from './Components/Certifications'
 import Education from './Components/Education'
@@ -23,12 +22,13 @@ import DemandForecasting from './Components/AllServices/DemandForecasting';
 import LogisticOperations from './Components/AllServices/LogisticOperations';
 import OrderManagement from './Components/AllServices/OrderManagement';
 import PLOperations from './Components/AllServices/PLOperations';
+import ExperiencesPage from './Components/AllExperience/ExperiencesPage';
 
 const router = createBrowserRouter(
   [
     {
       path:"/",
-      element : 
+      element :
       <div>
         <Navbar/>
         <Home />
@@ -56,10 +56,10 @@ const router = createBrowserRouter(
 
     {
       path:"/experience",
-      element :  
+      element :
       <div>
         <Navbar/>
-        <Experience />
+        <ExperiencesPage />
       </div>
     },
 
