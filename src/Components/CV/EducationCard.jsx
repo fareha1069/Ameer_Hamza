@@ -13,15 +13,15 @@ const EducationCard = ({ education = {} }) => {
       viewport={{ once: true }}
       whileHover={{ scale: 1.05, boxShadow: "0 12px 24px rgba(0,0,0,0.15)" }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className="flex flex-col md:flex-row items-center bg-[#E8F0F2] p-4 md:p-8 rounded-xl shadow-lg "
+      className="flex flex-col md:flex-row items-center bg-[#E8F0F2] p-8 rounded-xl shadow-lg "
     >
       {/* Logo */}
-      <div className="flex-shrink-0 md:mb-0 md:mr-10 w-24 h-24 rounded-full overflow-hidden bg-white border border-gray-200 flex items-center justify-center shadow-md">
+      <div className="flex-shrink-0 mb-4 md:mb-0 md:mr-10 w-24 h-24 rounded-full overflow-hidden bg-white border border-gray-200 flex items-center justify-center shadow-md">
         {icon ? (
           <img
             src={icon}
             alt={`${institute} logo`}
-            className="object-contain w-16 h-16 rounded rounded-full"
+            className="object-contain w-16 h-16 rounded rounded-full "
           />
         ) : (
           <div className="text-indigo-700 text-5xl">🎓</div>
@@ -52,7 +52,7 @@ const EducationCard = ({ education = {} }) => {
 
       {/* Circular Progress */}
       <div className="mt-6 md:mt-0 md:ml-12 flex flex-col items-center w-24">
-        <div className="w-40 h-40 flex items-center justify-center">
+        <div className="w-35 h-30 flex items-center justify-center">
           <CircularProgress percent={percent} />
         </div>
       </div>
