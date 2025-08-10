@@ -21,7 +21,7 @@ const EducationCard = ({ education = {} }) => {
       className="flex flex-col md:flex-row items-center bg-[#E8F0F2] p-8 rounded-xl shadow-lg"
     >
       {/* Logo */}
-      <div className="flex-shrink-0 mb-4 md:mb-0 md:mr-10 w-24 h-24 rounded-full overflow-hidden bg-[#D6DFE2] order border-gray-200 flex items-center justify-center shadow-md">
+      <div className="flex-shrink-0 mb-4 md:mb-0 md:mr-10 w-24 h-24 rounded-full overflow-hidden bg-white order border-gray-200 flex items-center justify-center shadow-md">
         {icon ? (
           <img
             src={icon}
@@ -40,7 +40,7 @@ const EducationCard = ({ education = {} }) => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="text-2xl font-semibold text-gray-900"
+          className="text-xl md:text-2xl font-semibold text-gray-900"
         >
           {institute}
         </motion.h3>
