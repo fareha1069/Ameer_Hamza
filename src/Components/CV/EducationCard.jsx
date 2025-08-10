@@ -36,23 +36,18 @@ const EducationCard = ({ education = {} }) => {
       {/* Info */}
       <div className="flex-1 text-left space-y-2">
         <motion.h3
-          variants={textVariant}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.3, delay: 1 * 0.05 }}
           className="text-xl md:text-2xl font-semibold text-gray-900"
         >
           {institute}
         </motion.h3>
 
         <motion.p
-          variants={textVariant}
-          initial="hidden"
-          whileInView="visible"
-          transition={
-            {repeat: Infinity}
-          }
-          viewport={{ once: true }}
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.3, delay: 2 * 0.05 }}
           className="text-md lg:text-xl text-gray-700 font-medium flex items-start gap-2"
         >
           <MdSchool className="text-[#005851] flex-shrink-0 mt-1" />
@@ -60,10 +55,9 @@ const EducationCard = ({ education = {} }) => {
         </motion.p>
 
         <motion.p
-          variants={textVariant}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.3, delay: 3 * 0.05 }}
           className="text-lg text-gray-600 flex items-start gap-2"
         >
           <MdMenuBook className="text-[#005851] flex-shrink-0 mt-1" />
@@ -71,10 +65,9 @@ const EducationCard = ({ education = {} }) => {
         </motion.p>
 
         <motion.p
-          variants={textVariant}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.3, delay: 4 * 0.05 }}
           className="text-md md:text-xl text-gray-700 font-medium flex items-start gap-2"
         >
           <MdStar className="text-[#005851] flex-shrink-0 mt-1" />

@@ -142,7 +142,7 @@ const Home = () => {
         <Recommendation recommend={recommend}/>
 
         <Contactdiv/>
-        <Pagal/>
+        {/* <Pagal/> */}
         <Footer/>
 
     </div>
