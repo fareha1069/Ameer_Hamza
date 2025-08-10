@@ -13,7 +13,7 @@ export const Cv = () => {
       style={{ backgroundImage: `url(${bg})` }}
     >
       <EducationSection />
-      {/* <Certifications /> */}
+      <Certifications />
     </Motion.div>
   )
 }

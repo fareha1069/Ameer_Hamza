@@ -21,7 +21,7 @@ const EducationCard = ({ education = {} }) => {
       className="flex flex-col md:flex-row items-center bg-[#E8F0F2] p-8 rounded-xl shadow-lg"
     >
       {/* Logo */}
-      <div className="flex-shrink-0 mb-4 md:mb-0 md:mr-10 w-24 h-24 rounded-full overflow-hidden bg-white border border-gray-200 flex items-center justify-center shadow-md">
+      <div className="flex-shrink-0 mb-4 md:mb-0 md:mr-10 w-24 h-24 rounded-full overflow-hidden bg-[#D6DFE2] order border-gray-200 flex items-center justify-center shadow-md">
         {icon ? (
           <img
             src={icon}
@@ -49,6 +49,9 @@ const EducationCard = ({ education = {} }) => {
           variants={textVariant}
           initial="hidden"
           whileInView="visible"
+          transition={
+            {repeat: Infinity}
+          }
           viewport={{ once: true }}
           className="text-md lg:text-xl text-gray-700 font-medium flex items-start gap-2"
         >

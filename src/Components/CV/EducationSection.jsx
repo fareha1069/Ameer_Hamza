@@ -13,7 +13,7 @@ const educationData = [
     duration: "Dec 2020 - Dec 2024",
     position: "2nd Position",
     award: "Silver Medal",
-    percent : "95"
+    percent : "95.7"
   },
   {
     icon: pgc,
@@ -22,7 +22,7 @@ const educationData = [
     field: "Business Administration and Management, General",
     grade: "A+ (994/1100)",
     duration: "Jan 2018 - Jan 2020",
-    percent : "91"
+    percent : "90.3"
   }
 ];
 
