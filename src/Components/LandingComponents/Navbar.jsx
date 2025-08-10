@@ -57,7 +57,7 @@ const navigationItems = [
   },
   { name: "Experience", href: "/experience" },
   { name: "Projects", href: "/recommendations" },
-  { name: "CV", href: "/certifications" },
+  { name: "CV", href: "/cv" },
   { name: "Contact", href: "/contact" },
 ];
 

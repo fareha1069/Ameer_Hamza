@@ -1,89 +1,101 @@
 import React from "react";
-// import { experienceData } from "./experienceData"; // or use directly if same file
-import ridge from '../assets/company3.jpg'
-const Pagal = () => {
-const experienceData = [
-  {
-    id: 1,
-    companyLogo: ridge,
-    title: "Amazon Supply Chain Manager",
-    company: "The Ridge · Full-time",
-    duration: "Oct 2022 – Feb 2025 · 2 yrs 5 mos",
-    location: "Santa Monica, California, United States · Remote",
-    responsibilities: [
-      "Designed and implemented a seasonal demand forecasting tool to predict monthly inventory needs, maintaining optimal stock levels across five international markets, including peak events such as Prime Day and Black Friday/Cyber Monday.",
-      "Coordinated cross-functionally with suppliers, accounts, advertising, operations, and Amazon teams to ensure successful new product launches.",
-      "Managed and maintained the ERP software for Amazon inventory, streamlining processes and ensuring data accuracy.",
-      "Onboarded Amazon Warehouse Distribution (AWD), reducing costs and eliminating numerous manual processes.",
-      "Delivered weekly inventory and performance reports to leadership, including the CEO, to support data-driven decision-making.",
-      "Improved the Inventory Performance Index (IPI) score from 600 to 780, significantly enhancing operational efficiency and optimizing storage utilization.",
-      "Oversaw supplier management for Amazon purchase orders (POs), ensuring precise inspections, shipment tracking, timely deliveries, and cost reductions.",
-      "Reconciled Amazon inventory discrepancies and recovered over $150,000 by filing claims for short-shipments and losses.",
-    ],
-    skills: [
-      "Logistics Management",
-      "Inventory Forecasting",
-      "Amazon Reimbursements",
-      "Warehouse Operations",
-      "Product Launch",
-      "Amazon Inventory Management",
-      "Inventory Planning",
-      "Microsoft Excel",
-      "Amazon IPI",
-      "Inventory Reconciliation",
-      "Warehouse Management Systems",
-      "Inventory Reports",
-    ],
-  },
-];
+import { GraduationCap, School, BadgeCheck } from "lucide-react";
 
-    const experience = experienceData[0]; // Only using first for now
-
-  return (
-    <div className="min-h-screen bg-gray-50 px-6 py-10 text-gray-900">
-      <div className="max-w-5xl mx-auto bg-white shadow-lg rounded-xl p-8 border border-gray-200">
-
-        {/* Header */}
-        <div className="flex items-start sm:items-center gap-6 mb-6 flex-col sm:flex-row">
-          <img
-            src={experience.companyLogo}
-            alt="Company Logo"
-            className="w-20 h-20 object-contain rounded-md shadow-sm"
-          />
-          <div>
-            <h1 className="text-3xl font-bold text-gray-800">{experience.title}</h1>
-            <p className="text-sm text-gray-600 mt-1">{experience.company}</p>
-            <p className="text-sm text-gray-600">{experience.duration}</p>
-            <p className="text-sm text-gray-600">{experience.location}</p>
-          </div>
-        </div>
-
-        {/* Description */}
-        <section className="mb-8">
-          <h2 className="text-xl font-semibold text-gray-800 mb-3">Responsibilities</h2>
-          <ul className="list-disc pl-6 space-y-2 text-gray-700 leading-relaxed">
-            {experience.responsibilities.map((point, idx) => (
-              <li key={idx}>{point}</li>
-            ))}
-          </ul>
-        </section>
-
-        {/* Skills */}
-        <section>
-          <h2 className="text-xl font-semibold text-gray-800 mb-3">Key Skills</h2>
-          <div className="flex flex-wrap gap-3">
-            {experience.skills.map((skill, index) => (
-              <span
-                key={index}
-                className="px-4 py-1 border border-gray-300 bg-gray-100 text-gray-700 rounded-full text-sm"
-              >
-                {skill}
-              </span>
-            ))}
-          </div>
-        </section>
-      </div>
+const EducationCard = ({ icon: Icon, institute, degree, field, grade, duration }) => (
+  <div className="flex items-start space-x-4 bg-gray-100 p-4 rounded-2xl shadow-md">
+    <div className="p-2 bg-blue-100 rounded-full">
+      <Icon className="text-blue-600 w-6 h-6" />
     </div>
+    <div>
+      <h4 className="text-lg font-semibold text-gray-800">{institute}</h4>
+      <p className="text-sm text-gray-700">{degree}, {field}</p>
+      <p className="text-sm text-gray-500">{grade} · {duration}</p>
+    </div>
+  </div>
+);
+
+const CertificationCard = ({ icon: Icon, title, issuer, issued, credentialId, details }) => (
+  <div className="flex items-start space-x-4 bg-gray-100 p-4 rounded-2xl shadow-md">
+    <div className="p-2 bg-green-100 rounded-full">
+      <Icon className="text-green-600 w-6 h-6" />
+    </div>
+    <div>
+      <h4 className="text-lg font-semibold text-gray-800">{title}</h4>
+      <p className="text-sm text-gray-700">{issuer}</p>
+      <p className="text-sm text-gray-500">Issued: {issued}</p>
+      {credentialId && (
+        <p className="text-sm text-blue-600">Credential ID: {credentialId}</p>
+      )}
+      {details && (
+        <p className="text-sm text-gray-600 mt-2 whitespace-pre-line">{details}</p>
+      )}
+    </div>
+  </div>
+);
+
+const Pagal = () => {
+  return (
+    <section id="cv" className="bg-gradient-to-b from-white to-gray-50 py-16 px-4 md:px-12">
+      <h2 className="text-4xl font-bold text-center text-blue-700 mb-12">Curriculum Vitae</h2>
+
+      {/* Summary */}
+      <div className="mb-12 max-w-3xl mx-auto">
+        <h3 className="text-2xl font-semibold mb-4 text-gray-800">Summary</h3>
+        <p className="text-gray-700 leading-relaxed text-lg">
+          Passionate and results-driven professional with a strong academic foundation in Criminal Science and Business Management. Known for adaptability, consistent high performance, and commitment to continuous learning. Seeking opportunities that merge analytical thinking with real-world problem-solving.
+        </p>
+      </div>
+
+      {/* Education */}
+      <div className="mb-16 max-w-4xl mx-auto">
+        <h3 className="text-2xl font-semibold mb-6 text-gray-800">Education</h3>
+        <div className="space-y-6">
+          <EducationCard
+            icon={GraduationCap}
+            institute="University of the Punjab"
+            degree="Bachelor of Applied Science - BASc"
+            field="Criminalistics and Criminal Science"
+            grade="A+ (GPA: 3.83/4.0)"
+            duration="Dec 2020 - Dec 2024"
+          />
+          <EducationCard
+            icon={School}
+            institute="Punjab Group Of Colleges"
+            degree="Intermediate"
+            field="Business Administration and Management"
+            grade="A+ (91%)"
+            duration="Jan 2018 - Jan 2020"
+          />
+        </div>
+      </div>
+
+      {/* Certifications */}
+      <div className="max-w-4xl mx-auto">
+        <h3 className="text-2xl font-semibold mb-6 text-gray-800">Certifications</h3>
+        <div className="space-y-6">
+          <CertificationCard
+            icon={BadgeCheck}
+            title="Certificate of Membership"
+            issuer="PAFLA - Pakistan Freelancers Association"
+            issued="Mar 2024"
+            credentialId="5579039828895916"
+          />
+          <CertificationCard
+            icon={BadgeCheck}
+            title="Oracle E-Business Suite R12: Advanced Supply Chain Planning"
+            issuer="University of California, Irvine (Coursera)"
+            issued="Nov 2023"
+          />
+          <CertificationCard
+            icon={BadgeCheck}
+            title="Fellow at Amal Career Prep - Fellowship"
+            issuer="Amal Academy"
+            issued="Oct 2017 - Present · 7 yrs 11 mos"
+            details={`Location: Lahore District, Punjab, Pakistan\n\nAmal Academy is an education initiative funded by Stanford University to prepare students for career development.\n\n• Communication: Learning communication skills, personal development, and professional tools to thrive in the marketplace.\n• Skills: Leadership development, teamwork, problem solving`}
+          />
+        </div>
+      </div>
+    </section>
   );
 };
 

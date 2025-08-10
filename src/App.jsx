@@ -10,7 +10,7 @@ import Services from './Components/AllServices/Services'
 import Home from './Components/LandingComponents/Home'
 import Recommendation from './Components/LandingComponents/Recommendation'
 import Certifications from './Components/CV/Certifications'
-import Education from './Components/CV/Education'
+import Education from './Components/CV/EducationSection'
 import Contact from './Components/Contact/Contact'
 // import Servicediv from './Components/Servicediv'
 import { color, motion, useScroll } from "motion/react"
@@ -23,6 +23,7 @@ import LogisticOperations from './Components/AllServices/LogisticOperations';
 import OrderManagement from './Components/AllServices/OrderManagement';
 import PLOperations from './Components/AllServices/PLOperations';
 import ExperiencesPage from './Components/AllExperience/ExperiencesPage';
+import { Cv } from './Components/CV/Cv';
 
 const router = createBrowserRouter(
   [
@@ -73,23 +74,13 @@ const router = createBrowserRouter(
     },
 
       {
-      path:"/certifications",
-      element :  
+      path:"/cv",
+      element :
       <div>
         <Navbar/>
-        <Certifications />
+        <Cv/>
       </div>
     },
-
-    {
-      path:"/education",
-      element :  
-      <div>
-        <Navbar/>
-        <Education />
-      </div>
-    },
-
     {
       path:"/contact",
       element :

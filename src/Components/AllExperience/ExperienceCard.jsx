@@ -32,14 +32,11 @@ const ExperienceCard = ({ experience = {} }) => {
               className="w-20 h-20 object-contain rounded-md transition-transform duration-300 group-hover:scale-110"
             />
           </Motion.div>
-
-
           {/* Company & Job Info */}
-
           <div>
             <p className="text-xl font-semibold text-[#092936]">{experience.company}</p>
             <p className="text-md font-medium text-gray-800 mt-1">
-              {experience.jobTitle || "Supply Chain Manager"}
+              {experience.title}
             </p>
             <p className="text-sm text-gray-600">{experience.duration}</p>
             <p className="text-sm text-gray-600">{experience.location}</p>
@@ -128,5 +125,4 @@ const ExperienceCard = ({ experience = {} }) => {
     </Motion.div>
   );
 };
-
 export default ExperienceCard;

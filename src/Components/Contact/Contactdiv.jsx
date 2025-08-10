@@ -8,6 +8,7 @@ import { Icon } from "@iconify/react";
 const Contactdiv = () => {
   const onSubmit = data => {
     console.log(data);
+    console.log("i am here")
   };
 
   const { register, handleSubmit, formState: { errors } } = useForm();

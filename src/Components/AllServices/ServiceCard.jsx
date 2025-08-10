@@ -21,7 +21,7 @@ const ServiceCard = ({ icon, title, description, duration }) => {
           src={icon}
           alt={`${title} icon`}
           className="h-30 w-30 object-contain"
-          loading="lazy"
+          // loading="lazy"
         />
       </div>
       <div className="flex flex-col items-start gap-3">

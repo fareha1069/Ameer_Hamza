@@ -14,8 +14,9 @@ import Experience from '../AllExperience/Experience.jsx'
 import company1 from '../../assets/compani1.jpg'
 import company2 from '../../assets/company2.jpg'
 import company3 from '../../assets/company3.jpg'
+// import company4 from '../../assets/company4.'
 import ridge from '../../assets/ridge.pdf'
-
+import Pagal from '../../Components/Pagal.jsx'
 const title = [" Project Management", "3PL Operations Management" , "Amazon Seller Policy Conformance " , "Vendor Management"]
 const desc = [
   "Planning, executing, and overseeing projects to meet goals on time and within budget and supply chain operations",
@@ -125,7 +126,7 @@ const Home = () => {
       >
         SERVICES
       </Motion.h1>
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 m-5 place-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8 m-5 place-items-center">
         <ServiceCard icon={pic1} title={title[0]} description={desc[0]} duration  = {0.2} />
         <ServiceCard icon={pic2} title={title[1]} description={desc[1]} duration  = {0.3} />
         <ServiceCard icon={pic3} title={title[2]} description={desc[2]} duration  = {0.4} />
@@ -141,7 +142,7 @@ const Home = () => {
         <Recommendation recommend={recommend}/>
 
         <Contactdiv/>
-        {/* <Pagal/> */}
+        <Pagal/>
         <Footer/>
 
     </div>
