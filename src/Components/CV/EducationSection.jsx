@@ -28,7 +28,7 @@ const educationData = [
 
 const EducationSection = () => {
   return (
-    <section id="education" className="flex flex-col w-[90%] md:w-[75%] items-center justify-center">
+    <section id="education" className="flex flex-col w-[90%] lg:w-[75%] items-center justify-center">
       <Motion.h1
         className="title text-4xl md:text-5xl lg:text-6xl font-bold text-[#092936]  tracking-tight leading-[1.5] bg-clip-text text-transparent inline-block bg-[length:300%_300%] mb-2"
         style={{ fontFamily: "Oswald, monospace" }}
