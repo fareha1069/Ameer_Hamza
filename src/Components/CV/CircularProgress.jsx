@@ -1,21 +1,11 @@
 import React from "react";
-import { motion, useAnimation } from "framer-motion";
-import { useEffect } from "react";
+import { motion } from "framer-motion";
 
 const CircularProgress = ({ percent }) => {
-  const radius = 70;        // Increased radius from 30 to 50 (bigger circle)
-  const stroke = 7;         // Increased stroke thickness from 5 to 8
+  const radius = 70;
+  const stroke = 7;
   const normalizedRadius = radius - stroke * 2;
   const circumference = normalizedRadius * 2 * Math.PI;
-
-  const controls = useAnimation();
-
-  useEffect(() => {
-    controls.start({
-      strokeDashoffset: circumference - (percent / 100) * circumference,
-      transition: { duration: 1.5, ease: "easeOut" },
-    });
-  }, [percent, circumference, controls]);
 
   return (
     <svg height={radius * 2} width={radius * 2}>
@@ -37,15 +27,19 @@ const CircularProgress = ({ percent }) => {
         cx={radius}
         cy={radius}
         strokeLinecap="round"
-        animate={controls}
         initial={{ strokeDashoffset: circumference }}
+        whileInView={{
+          strokeDashoffset: circumference - (percent / 100) * circumference,
+        }}
+        transition={{ duration: 1.5, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.6 }} // amount = kitna dikhna chahiye start hone k liye
       />
       <text
         x="50%"
         y="50%"
         dominantBaseline="middle"
         textAnchor="middle"
-        fontSize="24"              // Bigger font size for bigger circle
+        fontSize="24"
         fill="#005851"
         fontWeight="bold"
       >
