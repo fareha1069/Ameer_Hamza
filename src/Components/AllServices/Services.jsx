@@ -1,7 +1,7 @@
 import React from "react";
 import bg from "../../assets/bg.png";
 import PL from "../../assets/PL.png";
-import ServiceCard from "./ServiceCard.jsx";
+import ServiceCard from "./ServiceCard";
 import { motion as Motion } from "motion/react";
 import { Icon } from "@iconify/react";
 
@@ -9,7 +9,7 @@ import pic1 from '../../assets/logo1.png'
 import pic2 from '../../assets/logo2.png'
 import pic3 from '../../assets/logo3.png'
 import pic4 from '../../assets/logo4.png'
-import Stats from "../AllServices/Stats";
+import Stats from "./Stats";
 
 
 const title = [" Project Management", "3PL Operations Management" , "Amazon Seller Policy Conformance " , "Vendor Management"]
@@ -78,7 +78,7 @@ const Services = () => {
         </div>
       </Motion.div>
 
-      <Motion.div className="flex flex-row justify-around items-center my-12"
+      <Motion.div className="flex flex-col lg:flex-row justify-around items-center my-12"
       initial={{ opacity: 0, y: 50, scale: 0.8 }}
       whileInView={{ opacity: 1, y: 0, scale: 1 }}
       transition={{
@@ -90,7 +90,7 @@ const Services = () => {
         damping: 18,
       }}
       viewport={{ once: true, amount: 0.3 }}>
-      <div className="w-[45vw] flex flex-col text-lg">
+      <div className="w-[90vw] lg:w-[45vw] flex flex-col text-lg">
         <h1 className="title text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold text-[#092936] tracking-tight leading-[1.5] bg-clip-text text-transparent inline-block bg-[length:300%_300%] mb-3"
             style={{ fontFamily: "Oswald, monospace" }}
             
@@ -107,7 +107,7 @@ const Services = () => {
           ))}
         </div>
       </div>
-      <img src={PL} alt="Services" className="w-[40vw]"/>
+      <img src={PL} alt="Services" className="w-[90vw] lg:w-[40vw]"/>
       </Motion.div>
         <div className="flex flex-col items-center justify-center w-full p-6"
         style={{ backgroundImage: `url(${bg})` }}

@@ -17,6 +17,8 @@ import company3 from '../../assets/company3.jpg'
 // import company4 from '../../assets/company4.'
 import ridge from '../../assets/ridge.pdf'
 import Pagal from '../../Components/Pagal.jsx'
+import TrustedBy from '../TrustedBy/TrustedBy.jsx'
+import Contact from './Contact'
 const title = [" Project Management", "3PL Operations Management" , "Amazon Seller Policy Conformance " , "Vendor Management"]
 const desc = [
   "Planning, executing, and overseeing projects to meet goals on time and within budget and supply chain operations",
@@ -136,15 +138,13 @@ const Home = () => {
       </div>
 
       </div>
-      <Experience experiences={experienceData} />
-        
+        <TrustedBy/>
+        <Experience experiences={experienceData} />
         <Project/>
         <Recommendation recommend={recommend}/>
-
-        <Contactdiv/>
         {/* <Pagal/> */}
-        <Footer/>
-
+        <Contact/>
+        
     </div>
   )
 }

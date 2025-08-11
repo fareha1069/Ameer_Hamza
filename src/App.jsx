@@ -23,6 +23,7 @@ import LogisticOperations from './Components/AllServices/LogisticOperations';
 import OrderManagement from './Components/AllServices/OrderManagement';
 import PLOperations from './Components/AllServices/PLOperations';
 import ExperiencesPage from './Components/AllExperience/ExperiencesPage';
+import Footer from './Components/LandingComponents/Footer';
 import { Cv } from './Components/CV/Cv';
 
 const router = createBrowserRouter(
@@ -33,6 +34,7 @@ const router = createBrowserRouter(
       <div>
         <Navbar/>
         <Home />
+        <Footer/>
       </div>
 
     },
@@ -43,15 +45,17 @@ const router = createBrowserRouter(
       <div>
         <Navbar/>
         <Services />
+        <Footer/>
       </div>
     },
 
      {
       path:"/project",
-      element :  
+      element :
       <div>
         <Navbar/>
         <Project />
+        <Footer/>
       </div>
     },
 
@@ -61,6 +65,7 @@ const router = createBrowserRouter(
       <div>
         <Navbar/>
         <ExperiencesPage />
+        <Footer/>
       </div>
     },
 
@@ -70,6 +75,7 @@ const router = createBrowserRouter(
       <div>
         <Navbar/>
         <Recommendation />
+        <Footer/>
       </div>
     },
 
@@ -79,6 +85,7 @@ const router = createBrowserRouter(
       <div>
         <Navbar/>
         <Cv/>
+        <Footer/>
       </div>
     },
     {
@@ -87,6 +94,7 @@ const router = createBrowserRouter(
       <div>
         <Navbar/>
         <Contact />
+        <Footer/>
       </div>
     },
     //services pages
@@ -96,6 +104,7 @@ const router = createBrowserRouter(
       <div>
         <Navbar/>
         <AmazonFba />
+        <Footer/>
       </div>
     },
     {
@@ -104,6 +113,7 @@ const router = createBrowserRouter(
       <div>
         <Navbar/>
         <AmazonInventory />
+        <Footer/>
       </div>
     },
     {
@@ -112,6 +122,7 @@ const router = createBrowserRouter(
       <div>
         <Navbar/>
         <DemandForecasting />
+        <Footer/>
       </div>
     },
     {
@@ -120,6 +131,7 @@ const router = createBrowserRouter(
       <div>
         <Navbar/>
         <DTCSupplyChain />
+        <Footer/>
       </div>
     },
     {
@@ -128,6 +140,7 @@ const router = createBrowserRouter(
       <div>
         <Navbar/>
         <LogisticOperations />
+        <Footer/>
       </div>
     },
     {
@@ -136,6 +149,7 @@ const router = createBrowserRouter(
       <div>
         <Navbar/>
         <OrderManagement />
+        <Footer/>
       </div>
     },
     {
@@ -144,6 +158,7 @@ const router = createBrowserRouter(
       <div>
         <Navbar/>
         <PLOperations />
+        <Footer/>
       </div>
     },
 
@@ -155,7 +170,7 @@ function App() {
   return (
     <div>
         <RouterProvider router={router} />
-      
+        
     </div>
 
     

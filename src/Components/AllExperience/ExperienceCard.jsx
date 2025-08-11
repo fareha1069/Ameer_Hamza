@@ -16,10 +16,9 @@ const ExperienceCard = ({ experience = {} }) => {
     >
 
       <div className="flex flex-col md:flex-row gap-10">
-        {/* Left Side: Logo + Job Details + Skills */}
+      
         <div className="md:w-1/3 w-full flex flex-col items-center md:items-start text-center md:text-left space-y-6">
-          {/* Company Logo */}
-          {/* Company Logo with Animation & Hover Effect */}
+        
           <Motion.div
             className="w-24 h-24 rounded-2xl bg-[#f9fafb] shadow-inner border flex items-center justify-center transition-transform duration-300 hover:scale-105 hover:shadow-lg"
             initial={{ opacity: 0, scale: 0.9 }}
@@ -32,7 +31,6 @@ const ExperienceCard = ({ experience = {} }) => {
               className="w-20 h-20 object-contain rounded-md transition-transform duration-300 group-hover:scale-110"
             />
           </Motion.div>
-          {/* Company & Job Info */}
           <div>
             <p className="text-xl font-semibold text-[#092936]">{experience.company}</p>
             <p className="text-md font-medium text-gray-800 mt-1">
@@ -42,8 +40,7 @@ const ExperienceCard = ({ experience = {} }) => {
             <p className="text-sm text-gray-600">{experience.location}</p>
           </div>
 
-          {/* Skills (Vertical Layout) */}
-          {/* Premium Styled Skills Section */}
+       
           <div className="w-full">
 
             <h3 className="text-lg font-semibold text-[#092936] mb-3">Top Skills</h3>
@@ -67,7 +64,7 @@ const ExperienceCard = ({ experience = {} }) => {
 
         </div>
 
-        {/* Right Side: Title + Description + Responsibilities */}
+        {/* Right Side */}
         <div className="md:w-2/3 w-full space-y-8">
           {/* Title */}
 
@@ -83,14 +80,11 @@ const ExperienceCard = ({ experience = {} }) => {
           >
             {experience.title}
           </Motion.h1>
-
-          {/* Short Description */}
           <p className="text-[#092936] text-base md:text-lg leading-relaxed">
             {experience.shortDescription}
           </p>
 
           {/* Responsibilities */}
-          {/* Modern Responsibilities Section with Timeline Style */}
           <div>
             <h3 className="text-xl font-semibold text-[#092936] mb-6">Key Responsibilities</h3>
             <div className="relative border-l-2 border-dashed border-[#005851] ml-3 space-y-6">
@@ -102,10 +96,7 @@ const ExperienceCard = ({ experience = {} }) => {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.3, delay: idx * 0.05 }}
                 >
-                  {/* Dot Icon on the Line */}
                   <span className="absolute -left-3 top-1 w-4 h-4 rounded-full bg-[#005851] shadow-md border-2 border-white"></span>
-
-                  {/* Icon + Text */}
                   <div className="flex items-start gap-3">
                     <Icon
                       icon="lucide:check-circle"

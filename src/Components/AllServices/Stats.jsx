@@ -56,8 +56,8 @@ const Stats = () => {
   }, [recisInView]);
 
   return (
-    <div className="flex flex-row justify-evenly gap-4">
-      <Card className="bg-[#648999] h-[170px] w-[30vw] !border-[#08374A] border-b-4">
+    <div className="flex flex-col lg:flex-row justify-evenly gap-4">
+      <Card className="bg-[#648999] w-[90vw] h-[170px] lg:w-[30vw] !border-[#08374A] border-b-4">
         <CardContent className="flex flex-col justify-around h-full overflow-y-auto">
           <Motion.h1
             ref={expRef}
@@ -83,7 +83,7 @@ const Stats = () => {
         </CardContent>
       </Card>
 
-      <Card className="bg-[#648999] h-[170px] w-[30vw] !border-[#08374A] border-b-4">
+      <Card className="bg-[#648999] w-[90vw] h-[170px] lg:w-[30vw] !border-[#08374A] border-b-4">
         <CardContent className="flex flex-col justify-around h-full overflow-y-auto">
           <Motion.h1
             ref={proRef}
@@ -103,7 +103,7 @@ const Stats = () => {
           </p>
         </CardContent>
       </Card>
-      <Card className="bg-[#648999] h-[170px] w-[30vw] !border-[#08374A] border-b-4">
+      <Card className="bg-[#648999] w-[90vw] h-[170px] lg:w-[30vw] !border-[#08374A] border-b-4">
         <CardContent className="flex flex-col justify-around h-full overflow-y-auto">
           <Motion.h1
             ref={recRef}
