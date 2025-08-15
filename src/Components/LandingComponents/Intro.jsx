@@ -44,7 +44,7 @@ const Intro = () => {
           >
             Supply Chain Strategist
           </Motion.h1>
-          <p className="txt text-xl font-medium text-[#CCD8DC] lg:w-[40vw]">
+          <p className="txt text-lg font-medium text-[#CCD8DC] lg:w-[40vw]">
             Strategic Supply Chain Manager with 4+ years of experience driving operational efficiency Strategic Supply Chain Manager with 4+ years of experience driving operational efficiency Strategic Supply Chain Manager with 4+ years of experience driving operational efficiency Strategic Supply Chain Manager with 4+ years of experience driving operational efficiency Strategic Supply Chain Manager with 4+ years of experience driving operational efficiency Strategic Supply Chain Manager with 4+ years of experience driving operational efficiency
           </p>
         </div>

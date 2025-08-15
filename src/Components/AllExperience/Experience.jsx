@@ -21,7 +21,7 @@ const Experience = ({ experiences = [] }) => {
     >
       {/* <div className="bg-white/5 "> */}
       <Motion.h1
-        className="title text-4xl md:text-5xl lg:text-6xl font-bold text-[#092936] text-center tracking-tight leading-[1.5] bg-clip-text text-transparent inline-block bg-[length:250%_250%] mb-2"
+        className="title text-4xl md:text-5xl lg:text-5xl xl:6xl font-bold text-[#092936] text-center tracking-tight leading-[1.5] bg-clip-text text-transparent inline-block bg-[length:250%_250%] mb-2"
         style={{ fontFamily: "Oswald, monospace" }}
         animate={{ backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"] }}
         transition={{

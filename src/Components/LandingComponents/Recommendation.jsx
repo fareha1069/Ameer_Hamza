@@ -75,7 +75,7 @@ const Recommendation = ({ recommend = [] }) => {
       viewport={{ once: true, amount: 0.3 }}
     >
       <Motion.h1
-        className="title text-5xl md:text-7xl lg:text-7xl xl:text-8xl text-center font-bold text-[#092936] w-[100vw] lg:w-[45vw] tracking-tight leading-[1.5] bg-clip-text text-transparent inline-block bg-[length:300%_300%] mb-2"
+        className="title text-4xl md:text-6xl lg:text-6xl xl:text-8xl text-center font-bold text-[#092936] w-[100vw] lg:w-[45vw] tracking-tight leading-[1.5] bg-clip-text text-transparent inline-block bg-[length:300%_300%] mb-2"
         style={{ fontFamily: "Oswald, monospace" }}
         animate={{ backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"] }}
         transition={{
