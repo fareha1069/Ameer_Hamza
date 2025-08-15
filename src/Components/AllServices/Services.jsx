@@ -11,14 +11,17 @@ import pic3 from '../../assets/logo3.png'
 import pic4 from '../../assets/logo4.png'
 import Stats from "./Stats";
 
-
-const title = [" Project Management", "3PL Operations Management" , "Amazon Seller Policy Conformance " , "Vendor Management"]
-const desc = [
-  "Planning, executing, and overseeing projects to meet goals on time",
-  "Efficient coordination and optimization of third-party logistics services",
-  "Ensuring adherence to Amazon’s marketplace policies to maintain",
-  "Streamlining the process of selecting, onboarding, managing vendors"
+const title = ["Seasonal Demand Forecasting", "Procurement Order Management" , "Freight and Logistics Operations" ,"3PL Operations Management", "Amazon Inventory Reimbursements", "Amazon FBA/AWD Inventory Management" , "DTC Supply Chain Management"]
+const desc= [
+  "Predict the sales trends to optimize stock during seasonal fluctuations.",
+  "Streamline purchase orders ensuring timely and cost-efficient product sourcing.",
+  "Manage shipping routes for fast, reliable, and cost-effective deliveries.",
+  "Coordinate third-party logistics for seamless warehousing and fulfillment services.",
+  "Recover funds for lost or damaged inventory through Amazon claims.",
+  "Track and optimize the Amazon warehouse stock for the maximum sales efficiency.",
+  "Oversee direct-to-consumer inventory flow ensuring accurate delivery."
 ];
+
 
 const Services = () => {
   return (

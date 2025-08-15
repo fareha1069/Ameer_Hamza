@@ -19,7 +19,6 @@ import ridge from '../../assets/ridge.pdf'
 import Pagal from '../../Components/Pagal.jsx'
 import TrustedBy from '../TrustedBy/TrustedBy.jsx'
 import Contact from './Contact'
-import ServicesGrid from './ServicesGrid'
 const title = ["Seasonal Demand Forecasting", "Procurement Order Management" , "Freight and Logistics Operations" ,"3PL Operations Management", "Amazon Inventory Reimbursements", "Amazon FBA/AWD Inventory Management" , "DTC Supply Chain Management"]
 const desc= [
   "Predict the sales trends to optimize stock during seasonal fluctuations.",
@@ -130,15 +129,15 @@ const Home = () => {
       >
         SERVICES
       </Motion.h1>
-        {/* <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3  gap-8 m-5 place-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3  gap-8 m-5 place-items-center">
         <ServiceCard icon={pic1} title={title[0]} description={desc[0]} duration  = {0.2} />
         <ServiceCard icon={pic2} title={title[1]} description={desc[1]} duration  = {0.3} />
         <ServiceCard icon={pic3} title={title[2]} description={desc[2]} duration  = {0.4} />
         <ServiceCard icon={pic4} title={title[3]} description={desc[3]} duration  = {0.5} />
         <ServiceCard icon={pic1} title={title[4]} description={desc[4]} duration  = {0.6} />
         <ServiceCard icon={pic2} title={title[5]} description={desc[5]} duration  = {0.7} />
-      </div> */}
-      <ServicesGrid/>
+      </div>
+
       </div>
         <TrustedBy/>
         <Experience experiences={experienceData} />

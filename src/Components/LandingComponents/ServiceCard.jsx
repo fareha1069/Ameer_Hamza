@@ -6,9 +6,9 @@ const ServiceCard = ({ icon, title, description }) => {
     <motion.div
      initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
+      transition={{ duration: 0.1, ease: "easeOut" }}
       whileHover={{ scale: 1.01 }}
-      viewport={{ once: true, amount: 0.3 }}
+
       className="bg-white border rounded-xl shadow-md p-6 text-center hover:shadow-xl transition-all duration-500 hover:scale-[1.03]"
     >
       <div className="flex justify-center mb-4">
