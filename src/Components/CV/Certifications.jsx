@@ -59,9 +59,10 @@ const Certifications = () => {
         animate={{ backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"] }}
         transition={{
           duration: 10,
-          repeat: Infinity,
+          // repeat: Infinity,
           ease: "linear",
         }}
+        viewport={{ once: true }}
       >
         Certifications
       </Motion.h1>

@@ -1,6 +1,6 @@
 import React from 'react'
 import Service from './Service'
-import PL from '../../assets/PL.png'
+import PL from '../../assets/Services/DTC.png'
 const DTCSupplyChain = () => {
   const title = "DTC Supply Chain Management";
   const desc = "I offer comprehensive Direct-to-Consumer (DTC) supply chain management solutions that ensure seamless product delivery from your warehouse to your customer’s doorstep. This includes demand forecasting, order fulfillment optimization, and inventory tracking across eCommerce platforms such as Shopify and Amazon. By leveraging data-driven forecasting models, I help maintain the right stock levels, reduce fulfillment delays, and keep operational costs under control.";

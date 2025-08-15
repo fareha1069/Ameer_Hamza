@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Card, CardContent } from "../../@/components/ui/card";
 import { motion } from "motion/react";
+import { Icon } from "@iconify/react";
 
 export default function ProjectMenu({ events }) {
   const [selected, setSelected] = useState(0);
@@ -61,10 +62,10 @@ export default function ProjectMenu({ events }) {
   }, [selected, isVertical]);
 
   return (
-    <div className="flex justify-center items-start w-full h-[125vh] lg:h-auto">
+    <div className="flex justify-center items-start w-full h-[110vh] md:h-[125vh] lg:h-auto">
       <div
         ref={containerRef}
-        className="flex flex-row lg:flex-col lg:items-center w-[90vw] lg:justify-center gap-x-5"
+        className="flex flex-row lg:flex-col lg:items-center w-[90vw] lg:justify-center gap-x-3 md:gap-x-5"
       >
         {/* Circles */}
         <div className="flex flex-col lg:flex-row mt-10 mb-5 items-center justify-center ">
@@ -74,11 +75,11 @@ export default function ProjectMenu({ events }) {
               className="flex flex-col lg:flex-row items-center justify-center "
             >
               {index !== 0 && (
-                <div className="border-r-3 lg:border-r-0 lg:border-b-3 border-[#648999] h-[70px] lg:h-0 lg:w-[70px] w-0"></div>
+                <div className="border-r-3 lg:border-r-0 lg:border-b-3 border-[#648999] h-[50px] lg:h-0 lg:w-[50px] xl:w-[70px] w-0"></div>
               )}
               <div
                 ref={(el) => (circleRefs.current[index] = el)}
-                className={`w-14 h-14 text-xl rounded-full flex items-center justify-center text-white font-bold z-10 cursor-pointer transition-all duration-300 ${
+                className={`w-9 h-9 md:w-10 md:h-10 xl:w-14 xl:h-14 text-xl rounded-full flex items-center justify-center text-white font-bold z-10 cursor-pointer transition-all duration-300 ${
                   selected === index ? "bg-[#08374A] scale-110" : "bg-[#648999]"
                 }`}
                 onClick={() => setSelected(index)}
@@ -107,15 +108,34 @@ export default function ProjectMenu({ events }) {
           >
             <Card
               ref={cardRef}
-              className="bg-white h-[50vh] w-[70vw] lg:w-[25vw] shadow-lg mb-10"
+              className="bg-white h-[50vh] w-[73vw] lg:w-[25vw] shadow-lg mb-10"
             >
-              <CardContent className="flex flex-col justify-around h-full overflow-y-auto p-4">
-                <h3 className="text-xl font-semibold">
-                  {events[selected].cardTitle}
+              <CardContent className="flex flex-col justify-around h-full overflow-y-auto px-4">
+                <h3 className="text-lg font-semibold">
+                  {events[selected].title}
                 </h3>
                 <p className="text-sm text-gray-500 mt-1">
-                  {events[selected].cardSubtitle}
+                  {events[selected].text}
                 </p>
+                <motion.div
+                  animate={{ y: [0, 2, 0] }}
+                  transition={{
+                    duration: 0.8,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  }}
+                >
+                  <a
+                    href={events[selected].slug}
+                    className="flex items-center space-x-1 text-gray-600 ml-auto"
+                  >
+                    Read More
+                    <Icon
+                      icon="mdi:chevron-double-right"
+                      className="w-5 h-4 mt-1"
+                    />
+                  </a>
+                </motion.div>
               </CardContent>
             </Card>
           </motion.div>

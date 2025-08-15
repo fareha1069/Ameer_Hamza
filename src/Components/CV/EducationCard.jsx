@@ -39,6 +39,7 @@ const EducationCard = ({ education = {} }) => {
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.3, delay: 1 * 0.05 }}
+          viewport={{ once: true }}
           className="text-xl md:text-2xl font-semibold text-gray-900"
         >
           {institute}
@@ -48,6 +49,7 @@ const EducationCard = ({ education = {} }) => {
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.3, delay: 2 * 0.05 }}
+          viewport={{ once: true }}
           className="text-md lg:text-xl text-gray-700 font-medium flex items-start gap-2"
         >
           <MdSchool className="text-[#005851] flex-shrink-0 mt-1" />
@@ -58,6 +60,7 @@ const EducationCard = ({ education = {} }) => {
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.3, delay: 3 * 0.05 }}
+          viewport={{ once: true }}
           className="text-lg text-gray-600 flex items-start gap-2"
         >
           <MdMenuBook className="text-[#005851] flex-shrink-0 mt-1" />
@@ -68,6 +71,7 @@ const EducationCard = ({ education = {} }) => {
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.3, delay: 4 * 0.05 }}
+          viewport={{ once: true }}
           className="text-md md:text-xl text-gray-700 font-medium flex items-start gap-2"
         >
           <MdStar className="text-[#005851] flex-shrink-0 mt-1" />

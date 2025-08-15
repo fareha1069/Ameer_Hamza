@@ -1,5 +1,5 @@
 import React from 'react'
-import PL from '../../assets/PL.png'
+import PL from '../../assets/Services/AmazonFba.png'
 import Service from './Service';
 
 const AmazonFba = () => {

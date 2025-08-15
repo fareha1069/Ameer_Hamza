@@ -1,6 +1,6 @@
 import React from 'react'
 import Service from './Service'
-import PL from '../../assets/Services/Demand.jpg'
+import PL from '../../assets/Services/DemandForecasting.png'
 // import { image, title } from 'motion/dist/react-client'
 const DemandForecasting = () => {
   const title =  "Seasonal Demand Forecasting"

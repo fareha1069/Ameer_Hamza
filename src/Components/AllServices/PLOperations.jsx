@@ -1,6 +1,6 @@
 import React from 'react'
 import Service from './Service'
-import PL from '../../assets/PL.png'
+import PL from '../../assets/Services/PL.png'
 const PLOperations = () => {
 
   const title = "3PL Operations Management";

@@ -12,11 +12,9 @@ const CertificationCard = ({ certification }) => {
     <motion.div
       ref={ref}
       initial={{ opacity: 0, y: 40 }}
-      animate={isInView ? { opacity: 1, y: 0 } : {}}
-      whileHover={{
-        scale: 1.03,
-        boxShadow: "0 12px 24px rgba(0,0,0,0.15)",
-      }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      whileHover={{ scale: 1.05, boxShadow: "0 12px 24px rgba(0,0,0,0.15)" }}
       transition={{ duration: 0.5, ease: "easeOut" }}
       className="flex flex-col md:flex-row bg-[#E8F0F2] p-6 rounded-xl shadow-lg w-full"
     >
@@ -65,6 +63,7 @@ const CertificationCard = ({ certification }) => {
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.3, delay: idx * 0.05 }}
+                viewport={{ once: true }}
               >
                 {/* Dot on the line */}
                 {/* <span className="absolute -left-3 top-1 w-4 h-4 rounded-full bg-[#005851] shadow-md border-2 border-white"></span> */}

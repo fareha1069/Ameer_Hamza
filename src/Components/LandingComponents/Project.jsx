@@ -5,43 +5,50 @@ import bg from '../../assets/bg.png'
 
 const Project = () => {
   const TimelineData = [
-    {
-      title: "2020",
-      cardTitle: "Started University",
-      cardSubtitle: "PUCIT",
-      cardDetailedText: "Began Bachelors in Software Engineering.",
-    },
-    {
-      title: "2022",
-      cardTitle: "Internship",
-      cardSubtitle: "XYZ Company",
-      cardDetailedText: "Worked as a frontend intern for 3 months.",
-    },
-    {
-      title: "2025",
-      cardTitle: "Graduation",
-      cardSubtitle: "PUCIT",
-      cardDetailedText: "Successfully completed my degree.",
-    },
-    {
-      title: "2020",
-      cardTitle: "Started University",
-      cardSubtitle: "PUCIT",
-      cardDetailedText: "Began Bachelors in Software Engineering.",
-    },
-    {
-      title: "2022",
-      cardTitle: "Internship",
-      cardSubtitle: "XYZ Company",
-      cardDetailedText: "Worked as a frontend intern for 3 months.",
-    },
-  ];
+  {
+    title: "Demand Forecasting",
+    slug: "/demand-forecasting",
+    text: "Managed demand planning and forecasting for 20+ FBA brands. Optimized stock levels, coordinated supplier replenishments, and minimized excess inventory, achieving strong IPI scores and steady growth.",
+  },
+
+  {
+    title: "Purchase Order Management",
+    slug: "/purchase-order-management",
+    text: "Handled production orders for 5+ brands, coordinating with suppliers on production and quality. Tracked orders and documents using Excel, ensuring timely deliveries and smooth supply chain operations.",
+  },
+
+  {
+    title: "Amazon Listing Management",
+    slug: "/amazon-listing-management",
+    text: "Managed listings end-to-end: creation, optimization, and monitoring. Improved conversion rates with keyword optimization and images, while handling inventory, reviews, and issue resolution.",
+  },
+
+  {
+    title: "Amazon Listing Reinstatement",
+    slug: "/amazon-listing-reinstatement",
+    text: "Resolved a product safety issue for Hayvenhurst wallets. Cleared stock, prepared safety reports, and reinstated five listings to resume sales with minimal disruption.",
+  },
+
+  {
+    title: "Amazon Inventory Reconciliation & Reimbursements",
+    slug: "/amazon-inventory-reconciliation-reimbursements",
+    text: "Reconciled inventory for 8 brands and secured reimbursements for discrepancies, damages, and returns. Recovered $27K+ for The Ridge in a single month.",
+  },
+
+  {
+    title: "Consultation to 3PL for Prime Day FBA Shipment",
+    slug: "/consultation-3pl-prime-day-fba-shipment",
+    text: "Guided a 3PL on their first FBA shipment before Prime Day 2023. Advised on packing, labeling, and compliance, ensuring on-time delivery and error-free stock preparation.",
+  },
+];
+
   return (
-    <div className="flex flex-col h-full justify-center py-12">
+    <div className="flex flex-col h-full justify-center py-12 mb-10"
+    style={{ backgroundImage: `url(${bg})`}}
+    >
       <Motion.h1
         className="title text-5xl md:text-6xl font-bold text-[#092936] text-center tracking-tight leading-[1.5] bg-clip-text text-transparent inline-block bg-[length:300%_300%] mb-2"
         style={{ fontFamily: "Oswald, monospace" }}
-        // style={{ backgroundImage: `url(${bg})`}}
         animate={{ backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"] }}
         transition={{
           duration: 10,

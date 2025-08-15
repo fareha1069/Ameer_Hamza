@@ -62,7 +62,7 @@ const Recommendation = ({ recommend = [] }) => {
     <Motion.div
       className="flex flex-wrap justify-evenly items-center gap-4 bg-[#648999] relative overflow-hidden py-12"
       style={{ backgroundImage: `url(${bg})` }}
-      initial={{ opacity: 0, y: 150, scale: 0.8 }}
+      initial={{ opacity: 0, y: 50, scale: 0.8 }}
       whileInView={{ opacity: 1, y: 0, scale: 1 }}
       transition={{
         duration: 80,
@@ -72,7 +72,7 @@ const Recommendation = ({ recommend = [] }) => {
         // ease: 'easeInOut',
         damping: 18,
       }}
-      viewport={{ once: true, amount: 0.3 }}
+      viewport={{ once: true, amount: 0.1 }}
     >
       <Motion.h1
         className="title text-4xl md:text-6xl lg:text-6xl xl:text-8xl text-center font-bold text-[#092936] w-[100vw] lg:w-[45vw] tracking-tight leading-[1.5] bg-clip-text text-transparent inline-block bg-[length:300%_300%] mb-2"
@@ -170,7 +170,7 @@ const Recommendation = ({ recommend = [] }) => {
             </button>
 
             {/* Image */}
-            <Document
+            {/* <Document
               file={modalImage}
               loading="Loading..."
               onLoadError={console.error}
@@ -184,7 +184,7 @@ const Recommendation = ({ recommend = [] }) => {
                 renderAnnotationLayer={false}
                 className="!h-auto !min-h-0"
               />
-            </Document>
+            </Document> */}
           </div>
         </div>
       )}

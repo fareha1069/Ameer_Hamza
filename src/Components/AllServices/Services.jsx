@@ -1,6 +1,6 @@
 import React from "react";
 import bg from "../../assets/bg.png";
-import PL from "../../assets/PL.png";
+import PL from "../../assets/Services/Service.png";
 import ServiceCard from "./ServiceCard";
 import { motion as Motion } from "motion/react";
 import { Icon } from "@iconify/react";

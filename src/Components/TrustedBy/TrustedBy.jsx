@@ -13,7 +13,7 @@ import pic8 from '../../assets/trustedby/UprootClean1.png'
 
 const TrustedBy = () => {
   return (
-    <div className='flex flex-wrap justify-evenly items-center gap-4 md:bg-[#648999] relative overflow-hidden mt-15  mb-5 '>
+    <div className='flex flex-wrap justify-evenly items-center gap-4 md:bg-[#648999] relative overflow-hidden mt-15  mb-10 '>
         <Motion.h1
         className="title text-4xl md:text-5xl lg:text-6xl text-center font-bold text-[#092936] w-[100vw] md:w-[40vw] lg:w-[30vw] xl:w-[25vw] tracking-tight leading-[1.5] bg-clip-text text-transparent inline-block bg-[length:300%_300%] mb-2"
         style={{ fontFamily: "Oswald, monospace" }}
