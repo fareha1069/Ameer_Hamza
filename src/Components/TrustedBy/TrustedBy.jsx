@@ -7,7 +7,6 @@ import pic2 from '../../assets/trustedby/FEActive.png'
 import pic3 from '../../assets/trustedby/FullCircle.png'
 import pic4 from '../../assets/trustedby/Earthiest.png'
 import pic5 from '../../assets/trustedby/HayvenHurst2.png'
-import pic6 from '../../assets/trustedby/manifest.png'
 import pic7 from '../../assets/trustedby/HikerHungers.png'
 import pic8 from '../../assets/trustedby/UprootClean1.png'
 
@@ -34,7 +33,6 @@ const TrustedBy = () => {
     <CarouselItem><img src={pic2} alt='FEActive'/></CarouselItem>
     <CarouselItem><img src={pic3} alt='FullCircle'/></CarouselItem>
     <CarouselItem><img src={pic4} alt='Earthiest'/></CarouselItem>
-    <CarouselItem><img src={pic6} alt='Manifest'/></CarouselItem>
     <CarouselItem><img src={pic5} alt='HavyenHurst'/></CarouselItem>
     <CarouselItem><img src={pic7} alt='HikerHungers'/></CarouselItem>
     <CarouselItem><img src={pic8} alt='UprootClean'/></CarouselItem>

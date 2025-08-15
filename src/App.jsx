@@ -172,6 +172,60 @@ const router = createBrowserRouter(
         <Footer/>
       </div>
     },
+    {
+      path: "/demand-forecasting",
+      element:  
+        <div>
+          <Navbar />
+          <ProjectGen />
+          <Footer />
+        </div>
+    },
+    {
+      path: "/purchase-order-management",
+      element:  
+        <div>
+          <Navbar />
+          
+          <Footer />
+        </div>
+    },
+    {
+      path: "/amazon-listing-management",
+      element:  
+        <div>
+          <Navbar />
+          
+          <Footer />
+        </div>
+    },
+    {
+      path: "/amazon-listing-reinstatement",
+      element:  
+        <div>
+          <Navbar />
+          
+          <Footer />
+        </div>
+    },
+    {
+      path: "/amazon-inventory-reconciliation-reimbursements",
+      element:  
+        <div>
+          <Navbar />
+          
+          <Footer />
+        </div>
+    },
+    {
+      path: "/consultation-3pl-prime-day-fba-shipment",
+      element:  
+        <div>
+          <Navbar />
+          
+          <Footer />
+        </div>
+    },
 ])
 
 

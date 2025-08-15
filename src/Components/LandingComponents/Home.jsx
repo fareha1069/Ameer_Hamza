@@ -10,6 +10,8 @@ import pic1 from '../../assets/logo1.png'
 import pic2 from '../../assets/logo2.png'
 import pic3 from '../../assets/logo3.png'
 import pic4 from '../../assets/logo4.png'
+import pic5 from '../../assets/logo5.png'
+import pic6 from '../../assets/logo6.png'
 import Experience from '../AllExperience/Experience.jsx'
 import company1 from '../../assets/compani1.jpg'
 import company2 from '../../assets/company2.jpg'
@@ -134,8 +136,8 @@ const Home = () => {
         <ServiceCard icon={pic2} title={title[1]} description={desc[1]} duration  = {0.3} />
         <ServiceCard icon={pic3} title={title[2]} description={desc[2]} duration  = {0.4} />
         <ServiceCard icon={pic4} title={title[3]} description={desc[3]} duration  = {0.5} />
-        <ServiceCard icon={pic1} title={title[4]} description={desc[4]} duration  = {0.6} />
-        <ServiceCard icon={pic2} title={title[5]} description={desc[5]} duration  = {0.7} />
+        <ServiceCard icon={pic5} title={title[4]} description={desc[4]} duration  = {0.6} />
+        <ServiceCard icon={pic6} title={title[5]} description={desc[5]} duration  = {0.7} />
       </div>
 
       </div>
