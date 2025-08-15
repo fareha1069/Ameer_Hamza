@@ -45,7 +45,8 @@ const Intro = () => {
             Supply Chain Strategist
           </Motion.h1>
           <p className="txt text-lg font-medium text-[#CCD8DC] lg:w-[40vw]">
-            Strategic Supply Chain Manager with 4+ years of experience driving operational efficiency Strategic Supply Chain Manager with 4+ years of experience driving operational efficiency Strategic Supply Chain Manager with 4+ years of experience driving operational efficiency Strategic Supply Chain Manager with 4+ years of experience driving operational efficiency Strategic Supply Chain Manager with 4+ years of experience driving operational efficiency Strategic Supply Chain Manager with 4+ years of experience driving operational efficiency
+           Strategic Supply Chain Manager with 4+ years of expertise in optimizing end-to-end operations across global markets. Proven track record in enhancing efficiency, 
+           reducing costs, and delivering data-driven solutions for e-commerce success
           </p>
         </div>
         <Motion.div
