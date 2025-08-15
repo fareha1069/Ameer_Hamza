@@ -1,11 +1,12 @@
 import React from "react";
-import {motion as Motion} from 'motion/react'
-import { VerticalTimeline, VerticalTimelineElement,} from "react-vertical-timeline-component";
+import { motion as Motion } from 'motion/react'
+import { VerticalTimeline, VerticalTimelineElement, } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { BriefcaseIcon } from "@heroicons/react/24/solid";
-import bg from "../../assets/bg.png"; 
+import bg from "../../assets/bg.png";
 import "../../Components/AllExperience/Experience.css";
-
+import { Icon } from "@iconify/react";
+import { motion } from "motion/react"
 const Experience = ({ experiences = [] }) => {
   return (
     <div
@@ -15,8 +16,8 @@ const Experience = ({ experiences = [] }) => {
         // backgroundSize: "cover",
         // backgroundPosition: "center",
         // backgroundRepeat: "no-repeat",
-        position : "relative",
-        overflow : "hidden"
+        position: "relative",
+        overflow: "hidden"
       }}
     >
       {/* <div className="bg-white/5 "> */}
@@ -44,29 +45,47 @@ const Experience = ({ experiences = [] }) => {
               iconStyle={{ background: exp.iconBg, color: "white" }}
               // icon={<BriefcaseIcon className="h-6 w-6" />}
               icon={
-                    exp.imageIcon ? (
-                      <img
-                        src={exp.imageIcon}
-                        alt={`${exp.company} logo`}
-                        className="h-full w-full object-contain rounded-full p-1"
-                      />
-                    ) : (
-                    <BriefcaseIcon className="h-6 w-6" />
-                  )
-                }
-              >
+                exp.imageIcon ? (
+                  <img
+                    src={exp.imageIcon}
+                    alt={`${exp.company} logo`}
+                    className="h-full w-full object-contain rounded-full p-1"
+                  />
+                ) : (
+                  <BriefcaseIcon className="h-6 w-6" />
+                )
+              }
+            >
               <div className="transition-all duration-700 ease-in-out">
                 <h3 className="text-xl font-semibold text-gray-800">
                   {exp.title}
                 </h3>
                 <h4 className="text-md text-gray-500 mb-2">{exp.company}</h4>
-                
+
                 <p className=" text-gray-600">{exp.description}</p>
               </div>
             </VerticalTimelineElement>
           ))}
         </VerticalTimeline>
       </div>
+      <motion.p className="flex items-center justify-center space-x-1 text-gray-600 text-center mt-5"
+        animate={{ y: [0, 2, 0] }}
+        transition={{
+          duration: 1,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+      >
+        <a href="/experience" className="flex items-center gap-1 hover:underline">
+          <span>Show all Experiences</span>
+          <Icon
+            icon="mdi:chevron-double-right"
+            className="w-5 h-5"
+          />
+        </a>
+
+      </motion.p>
+
     </div>
   );
 };

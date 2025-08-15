@@ -55,19 +55,29 @@ const Intro = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, ease: 'easeOut' }}
         >
+          <a href="https://wa.me/92305540880" target="_blank" rel="noreferrer" className="flex items-center">
+            <Icon icon="logos:whatsapp-icon" width="36" height="36"/>
+          </a>
+          <a href="https://www.linkedin.com/in/ameer-hamza-ilyas/" target="_blank" rel="noreferrer">
+            <Icon icon="logos:linkedin-icon" width="32" height="32" />
+          </a>
+          <a href="mailto:your@email.com">
+            <Icon icon="logos:google-gmail" width="36" height="36" />
+          </a>
+          <a href="https://www.upwork.com/freelancers/~0176f60b60aa754ea3?viewMode=1" target="_blank" rel="noreferrer" className="flex items-center">
+            <Icon icon="simple-icons:upwork" width="32" height="32"className="text-[#08374A]"/>
+          </a>
           <a href="https://facebook.com" target="_blank" rel="noreferrer">
             <Icon icon="logos:facebook" width="32" height="32" />
           </a>
           <a href="https://www.instagram.com/ameer_hamza_ilyas/" target="_blank" rel="noreferrer">
             <Icon icon="skill-icons:instagram" width="36" height="36" />
           </a>
-          <a href="mailto:your@email.com">
-            <Icon icon="logos:google-gmail" width="36" height="36" />
-          </a>
-          <a href="https://www.linkedin.com/in/ameer-hamza-ilyas/" target="_blank" rel="noreferrer">
-            <Icon icon="logos:linkedin-icon" width="32" height="32" />
-          </a>
+          
         </Motion.div>
+        <button className="bg-[#08374A] txt text-lg font-medium text-white px-10 py-3 rounded-lg my-4 mx-auto">
+            Book a call
+          </button>
       </div>
 
     </div>

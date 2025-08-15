@@ -4,6 +4,7 @@ import { Icon } from "@iconify/react";
 import bg from "../../assets/bg.png";
 import ProjectImages from "./ProjectImages";
 import img from '../../assets/Projects/Projects.png'
+import Contact from "../../Components/LandingComponents/Contact";
 
 const skills = [
   "Demand Forecasting",
@@ -152,26 +153,7 @@ const ProjectPage = () => {
 
         <ProjectImages project={project} />
 
-      <Motion.div className="flex flex-col justify-center items-center py-15"
-            initial={{ opacity: 0, y: 50, scale: 0.8 }}
-            whileInView={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{
-              duration: 80,
-              type: "spring",
-              bounce: 0.9,
-              stiffness: 50,
-              damping: 18,
-            }}
-            viewport={{ once: true, amount: 0.3 }}
-            style={{ backgroundImage: `url(${bg})` }}>
-              <h1 className="title text-3xl md:text-4xl lg:text-4xl xl:text-5xl text-center font-bold text-[#092936] tracking-tight leading-[1.5] bg-clip-text text-transparent inline-block bg-[length:300%_300%] mb-3"
-                  style={{ fontFamily: "Oswald, monospace" }}
-                  >Idk what to say</h1>
-              <p className="txt text-xl font-medium">Wanna talk? Send me a message...</p>
-              <button className="bg-[#08374A] txt text-lg font-medium text-white px-10 py-3 rounded-lg my-4 mx-auto">
-                  Contact me
-                </button>
-            </Motion.div>
+     <Contact/>
     </div>
   );
 };

@@ -3,7 +3,8 @@ import bg from "../../assets/bg.png";
 import { motion as Motion } from "motion/react";
 import { Icon } from "@iconify/react";
 import ProjectMenu from "./ProjectMenu";
-import image from "../../assets/Projects/Projects2.png";
+import image from "../../assets/Projects/Project.png";
+import Contact from "../../Components/LandingComponents/Contact";
 
 const ProjectPage = () => {
   const skills = [
@@ -53,6 +54,8 @@ const ProjectPage = () => {
     text: "Guided a 3PL on their first FBA shipment before Prime Day 2023. Advised on packing, labeling, and compliance, ensuring on-time delivery and error-free stock preparation.",
   },
 ];
+
+const intro  = "This collection highlights key e-commerce and supply chain projects, covering demand forecasting, purchase order management, Amazon operations, inventory reimbursements, and 3PL consultations. Each project reflects hands-on problem-solving and delivering measurable results across global marketplaces."
   return (
     <>
       <Motion.div
@@ -72,14 +75,8 @@ const ProjectPage = () => {
           >
             PROJECTS
           </Motion.h1>
-          <p className="txt text-xl font-medium lg:w-[50vw] mb-7">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic dolore
-            architecto debitis aut cum temporibus ab dignissimos, odio earum
-            iure at quaerat ullam enim atque quam dolorem officiis pariatur
-            optio illum commodi vel minus animi numquam. Tempora et sit facilis
-            molestiae, quisquam esse error magnam eum corporis repudiandae
-            maxime sequi eligendi praesentium reprehenderit rem consequuntur
-            ipsam quas voluptatibus, aliquid quasi delectus facere.
+          <p className="text-base md:text-xl lg:w-[50vw] mb-7">
+           {intro}
           </p>
           <div className="flex flex-wrap gap-3">
             {skills?.map((skill, index) => (
@@ -124,46 +121,12 @@ const ProjectPage = () => {
             ease: "linear",
           }}
         >
-          Lorem ipsum dolor sit amet.
+          Highlights of My Key Projects
         </Motion.h1>
-        <p className="text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-          iure odit quae commodi impedit soluta accusamus quas, fugit
-          dignissimos officiis aut delectus autem ducimus, ipsam dolor illum
-          nemo. Cumque amet esse sunt eveniet fugiat quibusdam ex accusantium
-          doloribus distinctio, nulla dolorum itaque aliquid quam laborum ipsa
-          enim laboriosam. Dicta, pariatur.
-        </p>
+       
         <ProjectMenu events={TimelineData} />
       </div>
-
-      <Motion.div
-        className="flex flex-col justify-center items-center my-15"
-        initial={{ opacity: 0, y: 50, scale: 0.8 }}
-        whileInView={{ opacity: 1, y: 0, scale: 1 }}
-        transition={{
-          duration: 80,
-          type: "spring",
-          bounce: 0.9,
-          stiffness: 50,
-          // ease: 'easeInOut',
-          damping: 18,
-        }}
-        viewport={{ once: true, amount: 0.3 }}
-      >
-        <h1
-          className="title text-3xl md:text-4xl lg:text-4xl xl:text-5xl text-center font-bold text-[#092936] tracking-tight leading-[1.5] bg-clip-text text-transparent inline-block bg-[length:300%_300%] mb-3"
-          style={{ fontFamily: "Oswald, monospace" }}
-        >
-          Idk what to say
-        </h1>
-        <p className="txt text-xl font-medium">
-          Wanna talk? Send me a message...
-        </p>
-        <button className="bg-[#08374A] txt text-lg font-medium text-white px-10 py-3 rounded-lg my-4 mx-auto">
-          Contact me
-        </button>
-      </Motion.div>
+        <Contact/>
     </>
   );
 };

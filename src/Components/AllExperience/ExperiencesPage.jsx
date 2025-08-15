@@ -226,7 +226,9 @@ const ExperiencesPage = () => {
       <ExperienceCard experience={experience[2]} />
       <ExperienceCard experience={experience[3]} />
       <ExperienceCard experience={experience[4]} />
+      
     </Motion.div>
+    
   )
 }
 
