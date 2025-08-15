@@ -6,13 +6,13 @@ import Stats from "../AllServices/Stats";
 const Service = ({title, desc, image, p}) => {
   
   return (
-    <>
+    <div className="flex flex-col items-center"> 
     <Motion.div
-      className="flex flex-wrap justify-evenly items-center gap-4 relative overflow-hidden py-12"
+      className="flex flex-wrap w-full items-center justify-center gap-4 relative overflow-hidden py-12 mb-12"
       style={{ backgroundImage: `url(${bg})` }}
       
     >
-      <div className="flex flex-col items-center w-[100vw] lg:w-[45vw]">
+      <div className="flex flex-col items-center w-[95vw] lg:w-[45vw] justify-evenly items-center">
         <Motion.h1
           className="title text-4xl md:text-5xl lg:text-5xl xl:text-6xl text-center font-bold text-[#092936] tracking-tight leading-[1.5] bg-clip-text text-transparent inline-block bg-[length:300%_300%] mb-2"
           style={{ fontFamily: "Oswald, monospace" }}
@@ -43,7 +43,7 @@ const Service = ({title, desc, image, p}) => {
     <div className="flex items-center justify-center">
       <p className="txt text-lg font-medium text-dark p-4 mt-12 w-[95vw]">{p}</p>
     </div>
-    </>
+    </div>
   );
 };
 

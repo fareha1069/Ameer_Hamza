@@ -1,7 +1,8 @@
 import { React } from "react";
 import { motion as Motion } from "motion/react";
-import ProjectMenu from "./ProjectMenu"
+import ProjectMenu from "../AllProjects/ProjectMenu"
 import bg from '../../assets/bg.png'
+
 const Project = () => {
   const TimelineData = [
     {
@@ -34,9 +35,7 @@ const Project = () => {
       cardSubtitle: "XYZ Company",
       cardDetailedText: "Worked as a frontend intern for 3 months.",
     },
-    
   ];
-
   return (
     <div className="flex flex-col h-full justify-center py-12">
       <Motion.h1
@@ -52,10 +51,8 @@ const Project = () => {
       >
         PROJECTS
       </Motion.h1>
-
       <ProjectMenu events={TimelineData}/>
     </div>
   );
 };
-
 export default Project;

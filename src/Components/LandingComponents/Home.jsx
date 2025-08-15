@@ -3,7 +3,7 @@ import {motion as Motion} from 'motion/react'
 import Intro from './Intro'
 import Recommendation from '../LandingComponents/Recommendation'
 import ServiceCard from './ServiceCard.jsx'
-import Project from '../AllProjects/Project.jsx'
+import Project from './Project.jsx'
 import Contactdiv from '../Contact/Contactdiv.jsx'
 import Footer from './Footer.jsx'
 import pic1 from '../../assets/logo1.png'
@@ -19,15 +19,16 @@ import ridge from '../../assets/ridge.pdf'
 import Pagal from '../../Components/Pagal.jsx'
 import TrustedBy from '../TrustedBy/TrustedBy.jsx'
 import Contact from './Contact'
-const title = [" Project Management", "3PL Operations Management" , "Amazon Seller Policy Conformance " , "Vendor Management"]
-const desc = [
-  "Planning, executing, and overseeing projects to meet goals on time and within budget and supply chain operations",
-  "Efficient coordination and optimization of third-party logistics services to streamline supply chain operations",
-  "Ensuring adherence to Amazon’s marketplace policies to maintain compliance, avoid penalties, and su.",
-  "Streamlining the process of selecting, onboarding, and managing vendors to ensure efficient and cost-effective partnerships",
-  "",
-  ""
-]
+const title = ["Seasonal Demand Forecasting", "Procurement Order Management" , "Freight and Logistics Operations" ,"3PL Operations Management", "Amazon Inventory Reimbursements", "Amazon FBA/AWD Inventory Management" , "DTC Supply Chain Management"]
+const desc= [
+  "Predict the sales trends to optimize stock during seasonal fluctuations.",
+  "Streamline purchase orders ensuring timely and cost-efficient product sourcing.",
+  "Manage shipping routes for fast, reliable, and cost-effective deliveries.",
+  "Coordinate third-party logistics for seamless warehousing and fulfillment services.",
+  "Recover funds for lost or damaged inventory through Amazon claims.",
+  "Track and optimize the Amazon warehouse stock for the maximum sales efficiency.",
+  "Oversee direct-to-consumer inventory flow ensuring accurate delivery."
+];
 
 const experienceData = [
   {
@@ -128,7 +129,7 @@ const Home = () => {
       >
         SERVICES
       </Motion.h1>
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8 m-5 place-items-center">
+          <div className="w-[80vw] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5 m-5 place-items-center">
         <ServiceCard icon={pic1} title={title[0]} description={desc[0]} duration  = {0.2} />
         <ServiceCard icon={pic2} title={title[1]} description={desc[1]} duration  = {0.3} />
         <ServiceCard icon={pic3} title={title[2]} description={desc[2]} duration  = {0.4} />
@@ -136,12 +137,13 @@ const Home = () => {
         <ServiceCard icon={pic1} title={title[0]} description={desc[0]} duration  = {0.6} />
         <ServiceCard icon={pic2} title={title[1]} description={desc[1]} duration  = {0.7} />
       </div>
+      
 
       </div>
         <TrustedBy/>
         <Experience experiences={experienceData} />
         <Project/>
-        <Recommendation recommend={recommend}/>
+        {/* <Recommendation recommend={recommend}/> */}
         {/* <Pagal/> */}
         <Contact/>
         

@@ -5,7 +5,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { BrowserRouter ,Routes , Route, createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Navbar  from './Components/LandingComponents/Navbar'
-import Project from './Components/AllProjects/Project'
+import Project from './Components/AllProjects/ProjectPage'
 import Services from './Components/AllServices/Services'
 import Home from './Components/LandingComponents/Home'
 import Recommendation from './Components/LandingComponents/Recommendation'
@@ -25,6 +25,7 @@ import PLOperations from './Components/AllServices/PLOperations';
 import ExperiencesPage from './Components/AllExperience/ExperiencesPage';
 import Footer from './Components/LandingComponents/Footer';
 import { Cv } from './Components/CV/Cv';
+import ProjectGen from './Components/AllProjects/ProjectGen.jsx'
 
 const router = createBrowserRouter(
   [
@@ -50,7 +51,7 @@ const router = createBrowserRouter(
     },
 
      {
-      path:"/project",
+      path:"/projects",
       element :
       <div>
         <Navbar/>
@@ -162,6 +163,15 @@ const router = createBrowserRouter(
       </div>
     },
 
+    {
+      path:"/project1",
+      element :
+      <div>
+        <Navbar/>
+        <ProjectGen />
+        <Footer/>
+      </div>
+    },
 ])
 
 

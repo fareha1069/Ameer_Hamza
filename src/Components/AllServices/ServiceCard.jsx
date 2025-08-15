@@ -5,14 +5,10 @@ import { Icon } from "@iconify/react";
 const ServiceCard = ({ icon, title, description, duration }) => {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 15, scale: 0.9 }}
-      whileInView={{ opacity: 0.9, y: 0, scale: 1 }}
-      transition={{
-        type: "spring",
-        stiffness: 120,
-        damping: 12,
-        bounce: 0.2,
-      }}
+       initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      whileHover={{ scale: 1.01 }}
       viewport={{ once: true, amount: 0.3 }}
       className="flex flex-row justify-around gap-5 items-center bg-white border rounded-xl shadow-md p-6 text-center hover:shadow-lg transition-opacity"
     >

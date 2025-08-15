@@ -8,7 +8,7 @@ const Stats = () => {
   const isInView = useInView(expRef, { once: true });
   const [exp, setExp] = useState(1);
   useEffect(() => {
-    if (!isInView) return; 
+    if (!isInView) return;
     let current = 1;
     const interval = setInterval(() => {
       current += 1;
@@ -73,7 +73,7 @@ const Stats = () => {
             {exp}+
           </Motion.h1>
           <div className="flex flex-col">
-            <p className="txt text-lg font-medium text-dark text-center">
+            <p className="txt text-base font-medium text-dark text-center">
               years of
             </p>
             <p className="txt text-xl font-medium text-dark px-4 text-center">

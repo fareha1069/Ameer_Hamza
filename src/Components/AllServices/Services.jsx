@@ -122,7 +122,9 @@ const Services = () => {
         <ServiceCard icon={pic4} title={title[3]} description={desc[3]} duration  = {0.5} />
         <ServiceCard icon={pic1} title={title[0]} description={desc[0]} duration  = {0.6} />
         <ServiceCard icon={pic2} title={title[1]} description={desc[1]} duration  = {0.7} />
-      </div></div>
+      </div>
+      
+      </div>
 
       <div className="flex flex-col items-center justify-center w-full p-6">
           <h1 className="title text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold text-[#092936] tracking-tight leading-[1.5] bg-clip-text text-transparent inline-block bg-[length:300%_300%] mb-3"

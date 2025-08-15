@@ -30,7 +30,7 @@ const Intro = () => {
     {/* <div>{}</div> */}
       <div className="introduce lg:w-[50vw] w-[90vw] z-10 my-3 mt-6">
         <div>
-          <p className="txt text-xl font-semibold text-[#CCD8DC] w-[40vw]">Hello I'm</p>
+          <p className="txt text-xl font-semibold text-[#CCD8DC] w-[40vw]"></p>
           <p className="name text-3xl md:text-5xl font-semibold text-[#092936]" style={{ fontFamily: "Oswald, monospace" }}>Ameer Hamza</p>
           <Motion.h1
             className="title text-3xl md:text-5xl font-bold leading-[1.5] bg-clip-text text-transparent inline-block bg-[length:300%_300%] mb-2"
@@ -70,9 +70,6 @@ const Intro = () => {
       </div>
       
     </div>
-
-     
-  
   );
 };
 
