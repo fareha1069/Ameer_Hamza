@@ -10,7 +10,7 @@ import AnimatedBackground from './AnimatedBackground'; // import the new backgro
 
 const Intro = () => {
   return (
-        <div
+    <div
       className="intro flex flex-col lg:flex-row items-center justify-around bg-[#648999] relative overflow-hidden "
       style={{ backgroundImage: `url(${bg})` }}
     >
@@ -27,7 +27,7 @@ const Intro = () => {
           transition={{ duration: 2.5, ease: 'easeInOut' }}
         />
       </div>
-    {/* <div>{}</div> */}
+      {/* <div>{}</div> */}
       <div className="introduce lg:w-[50vw] w-[90vw] z-10 my-3 mt-6">
         <div>
           <p className="txt text-xl font-semibold text-[#CCD8DC] w-[40vw]"></p>
@@ -45,8 +45,8 @@ const Intro = () => {
             Supply Chain Strategist
           </Motion.h1>
           <p className="txt text-lg font-medium text-[#CCD8DC] lg:w-[40vw]">
-           Strategic Supply Chain Manager with 4+ years of expertise in optimizing end-to-end operations across global markets. Proven track record in enhancing efficiency, 
-           reducing costs, and delivering data-driven solutions for e-commerce success
+            Strategic Supply Chain Manager with 4+ years of expertise in optimizing end-to-end operations across global markets. Proven track record in enhancing efficiency,
+            reducing costs, and delivering data-driven solutions for e-commerce success
           </p>
         </div>
         <Motion.div
@@ -69,7 +69,7 @@ const Intro = () => {
           </a>
         </Motion.div>
       </div>
-      
+
     </div>
   );
 };
