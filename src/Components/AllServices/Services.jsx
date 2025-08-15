@@ -44,7 +44,7 @@ const Services = () => {
           >
             Services
           </Motion.h1>
-          <p className="text-base md:text-xl lg:font-medium lg:w-[80vw]">
+          <p className="text-base md:text-xl lg:w-[80vw]">
             {intro}
           </p>
           <button className="bg-[#08374A] txt text-lg font-medium text-white px-10 py-3 rounded-lg my-4 mx-auto">

@@ -1,6 +1,6 @@
 import React from 'react'
 import Service from './Service'
-import PL from '../../assets/PL.png'
+import PL from '../../assets/Services/orderManagement.png'
 
 const OrderManagement = () => {
   const title = "Procurement Order Management";

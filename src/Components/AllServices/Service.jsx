@@ -25,7 +25,7 @@ const Service = ({title, desc, image, p}) => {
         >
           {title}
         </Motion.h1>
-        <p className="txt text-base md:text-lg md:font-medium lg:w-[40vw] p-4">
+        <p className="txt text-base md:text-xl  lg:w-[40vw] p-4">
           {desc}
         </p>
         <button className="bg-[#08374A] txt text-lg font-medium text-white px-10 py-3 rounded-lg my-4 mx-auto mt-10">Book a call</button>
@@ -41,7 +41,7 @@ const Service = ({title, desc, image, p}) => {
     </Motion.div>
     <Stats/>
     <div className="flex items-center justify-center">
-      <p className="txt text-base md:text-lg md:font-medium text-dark p-4 mt-12 w-[95vw]">{p}</p>
+      <p className="txt text-base md:text-xl text-dark p-4 mt-12 w-[95vw]">{p}</p>
     </div>
     </div>
   );
