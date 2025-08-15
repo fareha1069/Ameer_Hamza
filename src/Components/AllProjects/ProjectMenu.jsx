@@ -108,7 +108,7 @@ export default function ProjectMenu({ events }) {
           >
             <Card
               ref={cardRef}
-              className="bg-white h-[50vh] w-[73vw] lg:w-[25vw] shadow-lg mb-10"
+              className="bg-white h-[50vh] w-[75vw] lg:w-[25vw] shadow-lg mb-10"
             >
               <CardContent className="flex flex-col justify-around h-full overflow-y-auto px-4">
                 <h3 className="text-lg font-semibold">
