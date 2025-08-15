@@ -22,6 +22,9 @@ const desc= [
   "Oversee direct-to-consumer inventory flow ensuring accurate delivery."
 ];
 
+const intro = "With over 4 years of hands-on experience in global supply chain management, I specialize in optimizing Amazon FBA, AWD, and DTC operations across multiple international markets. I design and implement advanced seasonal demand forecasting tools to ensure accurate inventory planning for peak events like Prime Day and Black Friday. My expertise includes ERP system enhancements, 3PL onboarding, and process automation to reduce costs and eliminate inefficiencies. I excel at supplier negotiation, purchase order management, and freight coordination to achieve on-time deliveries and optimal storage utilization. Skilled in inventory reconciliation, I have successfully recovered over $200,000 in lost or damaged goods through strategic claims management. I have consistently improved Amazon IPI scores, driving operational efficiency and account health. My track record includes launching 20+ products, managing cross-functional teams, and delivering actionable data insights to leadership. From procurement strategy to logistics execution, I offer end-to-end supply chain solutions tailored to business growth. Whether scaling established brands or launching new products, I ensure seamless operations that save time, cut costs, and boost profitability."
+
+
 
 const Services = () => {
   return (
@@ -44,23 +47,7 @@ const Services = () => {
             Services
           </Motion.h1>
           <p className="txt text-xl font-medium lg:w-[80vw]">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam,
-            ex placeat perferendis nulla possimus repellendus nemo illo
-            reprehenderit sequi esse inventore eaque dolore sed, qui quae
-            voluptates asperiores? Cupiditate aspernatur corrupti quia quisquam
-            at ex dolorem odit nisi sit neque odio mollitia, ea hic numquam
-            impedit perferendis cumque similique ab saepe necessitatibus
-            consequuntur magni non itaque assumenda. Labore impedit sint
-            provident illo, laboriosam velit nisi! Distinctio quasi pariatur
-            cumque dicta iste quas libero nam magnam quo provident dignissimos
-            omnis hic assumenda, nobis voluptas laborum minus corporis. Quaerat
-            voluptatem corporis, fugiat ratione tempora dicta natus voluptatum,
-            dolorem unde fugit aspernatur porro? Labore impedit sint provident
-            illo, laboriosam velit nisi! Distinctio quasi pariatur cumque dicta
-            iste quas libero nam magnam quo provident dignissimos omnis hic
-            assumenda, nobis voluptas laborum minus corporis. Quaerat voluptatem
-            corporis, fugiat ratione tempora dicta natus voluptatum, dolorem
-            unde fugit aspernatur porro?
+          {intro}
           </p>
           <button className="bg-[#08374A] txt text-lg font-medium text-white px-10 py-3 rounded-lg my-4 mx-auto">
             Book a call
@@ -97,12 +84,10 @@ const Services = () => {
         <h1 className="title text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold text-[#092936] tracking-tight leading-[1.5] bg-clip-text text-transparent inline-block bg-[length:300%_300%] mb-3"
             style={{ fontFamily: "Oswald, monospace" }}
             
-            >Lorem ipsum dolor sit amet.</h1>
+            >Strategic E-Commerce Supply Chain Services</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-          tempora fuga aliquam perferendis, eum soluta esse assumenda id
-          molestiae velit est nemo exercitationem possimus, ipsam laboriosam
-          beatae
+        Comprehensive solutions from forecasting to fulfillment, tailored for Amazon, Shopify, and global markets.
+Driving efficiency, reducing costs, and optimizing operations for sustained business growth.
         </p>
         <div className="my-4">
           {desc.map((item, index) => (
@@ -118,7 +103,7 @@ const Services = () => {
           <h1 className="title text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold text-[#092936] tracking-tight leading-[1.5] bg-clip-text text-transparent inline-block bg-[length:300%_300%] mb-3"
             style={{ fontFamily: "Oswald, monospace" }}
             >My Expertise</h1>
-        <div className="w-[80vw] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5 m-5 place-items-center">
+        <div className="w-[90vw] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-5 place-items-center">
         <ServiceCard icon={pic1} title={title[0]} description={desc[0]} duration  = {0.2} />
         <ServiceCard icon={pic2} title={title[1]} description={desc[1]} duration  = {0.3} />
         <ServiceCard icon={pic3} title={title[2]} description={desc[2]} duration  = {0.4} />
@@ -150,8 +135,8 @@ const Services = () => {
       viewport={{ once: true, amount: 0.3 }}>
         <h1 className="title text-3xl md:text-4xl lg:text-4xl xl:text-5xl text-center font-bold text-[#092936] tracking-tight leading-[1.5] bg-clip-text text-transparent inline-block bg-[length:300%_300%] mb-3"
             style={{ fontFamily: "Oswald, monospace" }}
-            >Idk what to say</h1>
-        <p className="txt text-xl font-medium">Wanna talk? Send me a message...</p>
+            >Ready to Optimize?</h1>
+        <p className="txt text-xl font-medium">Reach out and let’s make it happen.</p>
         <button className="bg-[#08374A] txt text-lg font-medium text-white px-10 py-3 rounded-lg my-4 mx-auto">
             Contact me
           </button>

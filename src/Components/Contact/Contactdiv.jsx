@@ -76,7 +76,7 @@ const Contactdiv = () => {
               height="30"
               className="inline-block mr-2"
             />{" "}
-            <span>abc@gmail.com</span>
+            <span>hamzamalik246810@gmail.com</span>
           </a>
           <a
             href="https://www.linkedin.com/in/ameer-hamza-ilyas/"
@@ -107,7 +107,7 @@ const Contactdiv = () => {
         <Card className="h-[400px] bg-[#648999] border-b-4 border-b-gray-600">
           <CardContent className="flex flex-col justify-evenly h-full overflow-y-auto">
             <form onSubmit={handleSubmit(onSubmit)}>
-              <h2 className="text-white md:text-xl font-semibold mb-2 rounded-sm">Ready to transform your supply chain? Reach out today</h2>
+              <h2 className="text-white md:text-xl font-semibold mb-2 rounded-sm">Let’s streamline your operations — start the conversation now.</h2>
               <div className="flex flex-row w-full justify-between">
               <input {...register("name", { required: true })} className="bg-white rounded-sm p-3 shadow-sm w-1/2" placeholder="Name" />
               {errors.firstName && <p>Name is required</p>}

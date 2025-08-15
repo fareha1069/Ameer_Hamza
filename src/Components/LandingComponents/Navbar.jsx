@@ -146,6 +146,7 @@ function Navbar() {
                       onMouseLeave={() => {
                         if (!isDropdownToggled) setHoverTab(null);
                       }}
+                    
                     >
                       <div className="flex items-center text-white font-medium px-3 py-2 gap-1 cursor-pointer">
                         {item.dropdown ? (
@@ -224,10 +225,11 @@ function Navbar() {
                           )}
                         </AnimatePresence>
                       )}
+                      
                     </div>
                   );
                 })}
-
+  
                 <span
                   className="absolute top-0 h-[2px] bg-white transition-all duration-300 ease-in-out"
                   style={{
@@ -242,8 +244,11 @@ function Navbar() {
                     width: `${underlineStyle.width}px`,
                   }}
                 />
+               
               </div>
+               
             </div>
+            
           </div>
 
           {/* Mobile menu */}

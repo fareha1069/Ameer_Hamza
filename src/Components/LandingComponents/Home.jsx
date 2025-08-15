@@ -142,8 +142,7 @@ const Home = () => {
         <TrustedBy/>
         <Experience experiences={experienceData} />
         <Project/>
-        {/* <Recommendation recommend={recommend}/> */}
-        <Pagal/>
+        <Recommendation recommend={recommend}/>
         <Contact/>
         
     </div>

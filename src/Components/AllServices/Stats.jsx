@@ -77,7 +77,7 @@ const Stats = () => {
               years of
             </p>
             <p className="txt text-xl font-medium text-dark px-4 text-center">
-              Professional Experience
+              Experience
             </p>
           </div>
         </CardContent>
@@ -119,7 +119,7 @@ const Stats = () => {
             {rec}+
           </Motion.h1>
           <p className="txt text-xl font-medium text-dark px-4 pt-4 text-center">
-            Recommendations
+            Clients
           </p>
         </CardContent>
       </Card>

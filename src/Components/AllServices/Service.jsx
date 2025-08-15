@@ -6,7 +6,7 @@ import Stats from "../AllServices/Stats";
 const Service = ({title, desc, image, p}) => {
   
   return (
-    <div className="flex flex-col items-center"> 
+    <div className="flex flex-col items-center mb-20"> 
     <Motion.div
       className="flex flex-wrap w-full items-center justify-center gap-4 relative overflow-hidden py-12 mb-12"
       style={{ backgroundImage: `url(${bg})` }}
@@ -28,7 +28,7 @@ const Service = ({title, desc, image, p}) => {
         <p className="txt text-xl font-medium lg:w-[40vw]">
           {desc}
         </p>
-        <button className="bg-[#08374A] txt text-lg font-medium text-white px-10 py-3 rounded-lg my-4 mx-auto">Book a call</button>
+        <button className="bg-[#08374A] txt text-lg font-medium text-white px-10 py-3 rounded-lg my-4 mx-auto mt-10">Book a call</button>
       </div>
 
       <div className="w-[90vw] md:w-[60vw] lg:w-[40vw]">
