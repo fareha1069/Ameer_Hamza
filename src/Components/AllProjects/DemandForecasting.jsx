@@ -136,6 +136,7 @@ const DemandForecasting = () => {
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3, delay: index * 0.05 }}
+                     viewport={{once:true}}
                   >
                     <div className="flex items-center justify-center w-6 h-6 bg-[#005851] text-white rounded-full shadow-inner group-hover:scale-110 transition-transform duration-200">
                       <Icon icon="lucide:zap" className="w-3.5 h-3.5" />
@@ -164,6 +165,7 @@ const DemandForecasting = () => {
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.3, delay: idx * 0.05 }}
+                     viewport={{once:true}}
                   >
                     <span className="absolute -left-3 top-1 w-4 h-4 rounded-full bg-[#005851] shadow-md border-2 border-white"></span>
                     <div className="flex items-start gap-3">
