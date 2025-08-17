@@ -3,7 +3,7 @@ import { motion as Motion } from 'motion/react'
 import { VerticalTimeline, VerticalTimelineElement, } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { BriefcaseIcon } from "@heroicons/react/24/solid";
-import bg from "../../assets/bg.png";
+import bg from "../../assets/Intro/bg.png"
 import "../../Components/AllExperience/Experience.css";
 import { Icon } from "@iconify/react";
 import { motion } from "motion/react"

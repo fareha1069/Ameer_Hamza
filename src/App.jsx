@@ -9,12 +9,8 @@ import Project from './Components/AllProjects/ProjectPage'
 import Services from './Components/AllServices/Services'
 import Home from './Components/LandingComponents/Home'
 import Recommendation from './Components/LandingComponents/Recommendation'
-import Certifications from './Components/CV/Certifications'
-import Education from './Components/CV/EducationSection'
+
 import Contact from './Components/Contact/Contact'
-// import Servicediv from './Components/Servicediv'
-import { color, motion, useScroll } from "motion/react"
-import { div } from 'motion/react-client';
 import AmazonFba from './Components/AllServices/AmazonFba';
 import AmazonInventory from './Components/AllServices/AmazonInventory';
 import DTCSupplyChain from './Components/AllServices/DTCSupplyChain';
@@ -25,7 +21,12 @@ import PLOperations from './Components/AllServices/PLOperations';
 import ExperiencesPage from './Components/AllExperience/ExperiencesPage';
 import Footer from './Components/LandingComponents/Footer';
 import { Cv } from './Components/CV/Cv';
-import ProjectGen from './Components/AllProjects/ProjectGen.jsx'
+import DemandForecasting1 from './Components/AllProjects/DemandForecasting';
+import PurchaseOrder from './Components/AllProjects/PurchaseOrder';
+import AmazonListing from './Components/AllProjects/AmazonListing';
+import AmazonReinstallment from './Components/AllProjects/AmazonReinstallment';
+import Consultation from './Components/AllProjects/Consultation';
+import AmazonInventory1 from './Components/AllProjects/AmazonInventory.jsx'
 
 const router = createBrowserRouter(
   [
@@ -162,22 +163,12 @@ const router = createBrowserRouter(
         <Footer/>
       </div>
     },
-
-    {
-      path:"/project1",
-      element :
-      <div>
-        <Navbar/>
-        <ProjectGen />
-        <Footer/>
-      </div>
-    },
     {
       path: "/demand-forecasting",
       element:  
         <div>
           <Navbar />
-          <ProjectGen />
+          <DemandForecasting1 />
           <Footer />
         </div>
     },
@@ -186,7 +177,7 @@ const router = createBrowserRouter(
       element:  
         <div>
           <Navbar />
-          
+          <PurchaseOrder />
           <Footer />
         </div>
     },
@@ -195,7 +186,7 @@ const router = createBrowserRouter(
       element:  
         <div>
           <Navbar />
-          
+          <AmazonListing />
           <Footer />
         </div>
     },
@@ -204,7 +195,7 @@ const router = createBrowserRouter(
       element:  
         <div>
           <Navbar />
-          
+          <AmazonReinstallment />
           <Footer />
         </div>
     },
@@ -213,7 +204,7 @@ const router = createBrowserRouter(
       element:  
         <div>
           <Navbar />
-          
+          <AmazonInventory1 />
           <Footer />
         </div>
     },
@@ -222,7 +213,7 @@ const router = createBrowserRouter(
       element:  
         <div>
           <Navbar />
-          
+          <Consultation />
           <Footer />
         </div>
     },

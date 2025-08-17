@@ -1,6 +1,6 @@
 "use client";
 
-import bg from "../../assets/bg.png";
+import bg from "../../assets/Intro/bg.png";
 import { motion as Motion } from "motion/react";
 import { useState, useEffect } from "react";
 
@@ -170,7 +170,7 @@ const Recommendation = ({ recommend = [] }) => {
             </button>
 
             {/* Image */}
-            {/* <Document
+            <Document
               file={modalImage}
               loading="Loading..."
               onLoadError={console.error}
@@ -184,7 +184,7 @@ const Recommendation = ({ recommend = [] }) => {
                 renderAnnotationLayer={false}
                 className="!h-auto !min-h-0"
               />
-            </Document> */}
+            </Document>
           </div>
         </div>
       )}

@@ -1,5 +1,5 @@
 import React from "react";
-import bg from "../../assets/bg.png";
+import bg from "../../assets/Intro/bg.png";
 import { motion as Motion } from "motion/react";
 import { Icon } from "@iconify/react";
 import ProjectMenu from "./ProjectMenu";

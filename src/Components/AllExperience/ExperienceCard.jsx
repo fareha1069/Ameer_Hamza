@@ -1,7 +1,7 @@
 import React from "react";
 import { motion as Motion } from "motion/react";
 import { Icon } from "@iconify/react";
-import bg from '../../assets/bg.png'
+import bg from '../../assets/Intro/bg.png'
 const ExperienceCard = ({ experience = {} }) => {
   return (
     // <div className="max-w-7xl mx-auto overflow-hidden rounded-2xl shadow-xl p-6 md:p-10 bg-white transition-shadow hover:shadow-2xl duration-300">

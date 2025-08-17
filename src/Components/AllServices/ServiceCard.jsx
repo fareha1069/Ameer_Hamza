@@ -1,21 +1,27 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Icon } from "@iconify/react";
-const ServiceCard = ({ icon, title, description ,link }) => {
+const ServiceCard = ({ icon, title, description, link }) => {
   return (
     <motion.div
+
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.1, ease: "easeOut" }}
       whileHover={{ scale: 1.01 }}
       viewport={{ once: true }}
-      className="bg-white border rounded-xl shadow-md p-6 text-center hover:shadow-xl transition-all duration-500 hover:scale-[1.03]"
+      className="bg-white border rounded-xl shadow-md p-6 text-center 
+          hover:shadow-xl transition-all duration-500 hover:scale-[1.03] 
+          w-full sm:w-[90%] md:w-[90%] lg:w-[28vw] min-h-[40vh]"
+
     >
+
+
       <div className="flex justify-center mb-4">
         <motion.img
           src={icon}
           alt={`${title} icon`}
-          className="h-20 w-20 object-contain"
+          className="h-25 w-25 object-contain"
 
         />
       </div>

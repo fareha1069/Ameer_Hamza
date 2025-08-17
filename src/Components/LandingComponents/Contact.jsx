@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion as Motion } from 'motion/react'
-import bg from '../../assets/bg.png'
+
 const Contact = () => {
     return (
         <div>
@@ -16,7 +16,7 @@ const Contact = () => {
                     damping: 18,
                 }}
                 viewport={{ once: true, amount: 0.3 }}
-                style={{ backgroundImage: `url(${bg})` }}>
+                >
                 <h1 className="title text-3xl md:text-4xl lg:text-4xl xl:text-5xl text-center font-bold text-[#092936] tracking-tight leading-[1.5] bg-clip-text text-transparent inline-block bg-[length:300%_300%] mb-3"
                     style={{ fontFamily: "Oswald, monospace" }}
                 >Ready to Optimize?</h1>

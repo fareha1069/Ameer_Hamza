@@ -1,7 +1,7 @@
 import { React } from "react";
 import { motion as Motion } from "motion/react";
 import ProjectMenu from "../AllProjects/ProjectMenu"
-import bg from '../../assets/bg.png'
+import bg from '../../assets/Intro/bg.png'
 import { Icon } from "@iconify/react";
 
 const Project = () => {

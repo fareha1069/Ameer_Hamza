@@ -3,7 +3,7 @@ import React from 'react'
 // import Education from './EducationSection'
 import Certifications from './Certifications'
 import { motion as Motion } from 'motion/react'
-import bg from '../../assets/bg.png'
+import bg from '../../assets/Intro/bg.png'
 import EducationSection from './EducationSection'
 
 export const Cv = () => {

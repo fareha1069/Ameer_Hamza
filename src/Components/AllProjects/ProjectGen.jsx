@@ -1,9 +1,9 @@
 import React from "react";
 import { motion as Motion } from "motion/react";
 import { Icon } from "@iconify/react";
-import bg from "../../assets/bg.png";
+import bg from "../../assets/Intro/bg.png";
 import ProjectImages from "./ProjectImages";
-import img from '../../assets/Projects/Projects.png'
+import img from '../../assets/Projects/Project.png'
 import Contact from "../../Components/LandingComponents/Contact";
 
 const skills = [

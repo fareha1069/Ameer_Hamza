@@ -1,5 +1,5 @@
 import React from "react";
-import bg from '../../assets/bg.png';
+import bg from '../../assets/Intro/bg.png';
 import { motion as Motion } from "motion/react";
 import Stats from "../AllServices/Stats";
 
@@ -31,7 +31,7 @@ const Service = ({title, desc, image, p}) => {
         <button className="bg-[#08374A] txt text-lg font-medium text-white px-10 py-3 rounded-lg my-4 mx-auto mt-10">Book a call</button>
       </div>
 
-      <div className="w-[90vw] md:w-[60vw] lg:w-[40vw]">
+      <div className="w-[90vw] md:w-[60vw] lg:w-[50vw]">
         <Motion.img src={image} alt="3PL" className="w-[90vw]" 
         initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

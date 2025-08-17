@@ -1,7 +1,7 @@
 import React from 'react';
-import Pic from '../../assets/pic.png';
+import Pic from '../../assets/Intro/pic.png';
 // import pics from '../assets/im'
-import bg from '../../assets/bg.png';
+import bg from '../../assets/Intro/bg.png';
 import { motion as Motion } from 'motion/react';
 import { Icon } from '@iconify/react';
 import './Intro.css';

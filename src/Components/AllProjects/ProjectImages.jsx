@@ -11,7 +11,7 @@ import {
   CarouselPrevious,
 } from "../../@/components/ui/carousel2";
 
-const ProjectImages = ({ project }) => {
+const ProjectImages = ({ project = [] }) => {
   const plugin = React.useRef(
     Autoplay({ delay: 3000, stopOnInteraction: true })
   );
@@ -27,33 +27,30 @@ const ProjectImages = ({ project }) => {
           ease: "linear",
         }}
       >
-        Lorem ipsum dolor sit amet.
+       Project Highlights
       </Motion.h1>
-      <p className="text-center w-[90vw]">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-        similique temporibus itaque quidem praesentium repudiandae rem, natus
-        reiciendis distinctio odio esse nostrum, vel libero dolor ad molestias!
-        Animi amet voluptates nostrum qui. Pariatur officia veritatis, omnis
-        culpa iusto, voluptatem quas expedita natus labore soluta inventore
-        vitae debitis. Dolorum, temporibus id.
-      </p>
+    
+
       <Carousel
         plugins={[plugin.current]}
-        className="w-[80vw] items-center py-10"
+        className="w-[80vw] items-center py-10 relative"
         onMouseEnter={plugin.current.stop}
         onMouseLeave={plugin.current.reset}
       >
         <CarouselContent>
-          {project.map((item, index) => (
+          {project.items?.map((item, index) => (
             <CarouselItem
               key={index}
-              className="pl-5 md:basis-1/2 lg:basis-1/3"
+              className="pl-5 basis-full md:basis-1/2 lg:basis-1/3"
             >
               <div className="p-1">
                 <Card className="opacity-90 h-[450px]">
                   <CardContent className="flex flex-col justify-around h-full overflow-y-auto">
-                    <img src={item.image} alt={item.text} />
-                    <div className="">
+                    <img
+                      src={item.image}
+                      alt={item.text || `project-${index}`}
+                    />
+                    <div>
                       <p className="text-sm text-gray-400 text-right">
                         {item.text}
                       </p>
@@ -64,8 +61,22 @@ const ProjectImages = ({ project }) => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselNext />
-        <CarouselPrevious />
+        <div className="absolute bottom-5 right-10 flex-row  lg:hidden">
+          <CarouselPrevious className="rounded-full shadow-md hover:bg-gray-200 transition" />
+          <CarouselNext className="rounded-full shadow-md hover:bg-gray-200 transition" />
+        </div>
+
+
+        {/* Large Screens Controls (side-centered) */}
+        <CarouselPrevious
+          className="hidden lg:flex absolute top-1/2 -translate-y-1/2 -left-9 
+                      xl:-left-8 rounded-full shadow-sm hover:bg-gray-200 transition"
+        />
+        <CarouselNext
+          className="hidden lg:flex absolute top-1/2 -translate-y-1/2 -right-4 
+                      xl:-right-8 rounded-full shadow-sm hover:bg-gray-200 transition"
+        />
+
       </Carousel>
     </div>
   );

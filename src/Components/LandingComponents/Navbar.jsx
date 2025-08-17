@@ -60,14 +60,39 @@ const navigationItems = [
   { name: "Experience", href: "/experience" },
   {
     name: "Projects", href: "/projects",
-    dropdown: [
-      { name: "Project1", href: "/project1" },
-      { name: "Project2", href: "/project1" },
-      { name: "Project3", href: "/project1" },
-      { name: "Project4", href: "/project1" },
-      { name: "Project5", href: "/project1" },
-      { name: "Project6", href: "/project1" },
-    ]
+   dropdown: [
+  { 
+    name: "Demand Forecasting", 
+    href: "/demand-forecasting",
+    description: "Optimized stock levels, boosted growth"
+  },
+  { 
+    name: "Purchase Order Management", 
+    href: "/purchase-order-management",
+    description: "Coordinated suppliers, ensured timely delivery"
+  },
+  { 
+    name: "Amazon Listing Management", 
+    href: "/amazon-listing-management",
+    description: "Created, optimized, and monitored listings"
+  },
+  { 
+    name: "Amazon Listing Reinstatement", 
+    href: "/amazon-listing-reinstatement",
+    description: "Resolved safety issue, resumed sales"
+  },
+  { 
+    name: "Amazon Inventory Reconciliation Reimbursements", 
+    href: "/amazon-inventory-reconciliation-reimbursements",
+    description: "Recovered damages, secured reimbursements"
+  },
+  { 
+    name: "Consultation 3pl Prime Day Fba Shipment", 
+    href: "/consultation-3pl-prime-day-fba-shipment",
+    description: "Guided shipment compliance, on-time delivery"
+  }
+]
+
 
   },
   { name: "CV", href: "/cv" },
