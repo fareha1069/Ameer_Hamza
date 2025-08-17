@@ -19,19 +19,27 @@ const ExperienceCard = ({ experience = {} }) => {
       
         <div className="md:w-1/3 w-full flex flex-col items-center md:items-start text-center md:text-left space-y-6">
         
-          <Motion.div
-            className="w-24 h-24 rounded-2xl bg-[#f9fafb] shadow-inner border flex items-center justify-center transition-transform duration-300 hover:scale-105 hover:shadow-lg"
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-          >
-            <img
-              src={experience.companyLogo}
-              alt="Company Logo"
-              className="w-20 h-20 object-contain rounded-md transition-transform duration-300 group-hover:scale-110"
-            />
-          </Motion.div>
+      <Motion.div
+  className="w-24 h-24 rounded-2xl bg-[#f9fafb] shadow-inner border flex items-center justify-center transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+  initial={{ opacity: 0, scale: 0.9 }}
+  whileInView={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.5 }}
+  viewport={{ once: true }}
+>
+  {experience.companyLogo ? (
+    <img
+      src={experience.companyLogo}
+      alt="Company Logo"
+      className="w-20 h-20 object-contain rounded-md transition-transform duration-300 group-hover:scale-110"
+    />
+  ) : (
+    <Icon
+      icon="lucide:building-2"
+      className="w-12 h-12 text-[#005851]"
+    />
+  )}
+</Motion.div>
+
           <div>
             <p className="text-xl font-semibold text-[#092936]">{experience.company}</p>
             <p className="text-md font-medium text-gray-800 mt-1">

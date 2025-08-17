@@ -7,6 +7,7 @@ import bg from "../../assets/Intro/bg.png"
 import "../../Components/AllExperience/Experience.css";
 import { Icon } from "@iconify/react";
 import { motion } from "motion/react"
+
 const Experience = ({ experiences = [] }) => {
   return (
     <div

@@ -2,6 +2,7 @@ import React from 'react'
 import company1 from '../../assets/Experience/compani1.jpg'
 import company2 from '../../assets/Experience/company2.jpg'
 import company3 from '../../assets/Experience/company3.jpg'
+import company5 from '../../assets/trustedby/FEActive.png'
 import Experience from './Experience';
 
 const experienceData = [
@@ -49,7 +50,8 @@ const experienceData = [
     date: "Jan 202 - May 2022",
     description:
       "Conducted meticulous demand forecasting and production order planning to ensure seamless inventory management for Amazon and Shopify.",
-    iconBg: "#60a5fa",
+    iconBg: "white",
+    imageIcon : company5
     //  imageIcon : company1
   },
 

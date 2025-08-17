@@ -154,7 +154,7 @@ const ExperiencesPage = () => {
       location: "Remote",
       shortDescription:
         "At Specstickco, I led the sourcing of four new products by identifying reliable suppliers, creating detailed cost and quality comparisons, and assisting in supplier selection. I enhanced the company’s product portfolio and sourcing strategy through strong vendor communication and negotiation.",
-      companyLogo: hiker, // Replace with actual import/variable name for the logo
+      
       responsibilities: [
         {
           text: "Sourced four new products by researching and contacting suppliers, creating detailed comparison documents, and assisting with supplier selection and rate negotiation."
