@@ -27,9 +27,11 @@ const ProjectImages = ({ project = [] }) => {
           ease: "linear",
         }}
       >
-       Project Highlights
+       {project.heading}
       </Motion.h1>
-    
+        <p className="text-center w-[90vw]">
+        {project.desc}
+      </p>
 
       <Carousel
         plugins={[plugin.current]}

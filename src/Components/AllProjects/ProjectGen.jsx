@@ -3,58 +3,9 @@ import { motion as Motion } from "motion/react";
 import { Icon } from "@iconify/react";
 import bg from "../../assets/Intro/bg.png";
 import ProjectImages from "./ProjectImages";
-import img from '../../assets/Projects/Project.png'
 import Contact from "../../Components/LandingComponents/Contact";
 
-const skills = [
-  "Demand Forecasting",
-  "Demand",
-  "3PL Operations",
-  "Project Management",
-  "Hardwork",
-  "Demand Forecasting",
-  "Demand",
-  "3PL Operations",
-];
-const responsibilities = [
-  "Demand Forecasting lorem ipum sit dul",
-  "Demand",
-  "3PL Operations",
-  "Project Management",
-  "Hardwork",
-  "Demand Forecasting",
-  "Demand",
-  "3PL Operations",
-];
-
-const project = [
-    {
-        text: "This score reflects my year-long effort with \"The Ridge\"",
-        image: img
-    },
-    {
-        text: "This score reflects my year-long effort with \"The Ridge\"",
-        image: img
-    },
-    {
-        text: "This score reflects my year-long effort with \"The Ridge\"",
-        image: img
-    },
-    {
-        text: "This score reflects my year-long effort with \"The Ridge\"",
-        image: img
-    },
-    {
-        text: "This score reflects my year-long effort with \"The Ridge\"",
-        image: img
-    },
-    {
-        text: "This score reflects my year-long effort with \"The Ridge\"",
-        image: img
-    },
-]
-
-const ProjectPage = () => {
+const ProjectPage = ({ title, skills, responsibilities, project }) => {
   return (
     <div>
       <Motion.div
@@ -62,7 +13,6 @@ const ProjectPage = () => {
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-
         style={{ backgroundImage: `url(${bg})` }}
       >
         <div className="flex flex-col md:flex-row gap-10 w-[90vw]">
@@ -79,7 +29,7 @@ const ProjectPage = () => {
                 ease: "linear",
               }}
             >
-              title
+              {title}
             </Motion.h1>
             <p className="text-[#092936] text-base md:text-lg leading-relaxed">
               short desc Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -118,7 +68,6 @@ const ProjectPage = () => {
 
           {/* Right Side */}
           <div className="md:w-2/3 w-full space-y-8">
-            
             {/* Responsibilities */}
             <div>
               <h3 className="text-xl font-semibold text-[#092936] mb-6">
@@ -151,9 +100,10 @@ const ProjectPage = () => {
         </div>
       </Motion.div>
 
-        <ProjectImages project={project} />
+      <ProjectImages project={project} />
 
-     <Contact/>
+      <Contact />
+
     </div>
   );
 };
