@@ -1,4 +1,4 @@
-import React from 'react';
+import {React, useEffect } from 'react';
 import Pic from '../../assets/Intro/pic.png';
 // import pics from '../assets/im'
 import bg from '../../assets/Intro/bg.png';
@@ -9,6 +9,20 @@ import AnimatedBackground from './AnimatedBackground'; // import the new backgro
 // import Servicediv from './Servicediv'
 
 const Intro = () => {
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://assets.calendly.com/assets/external/widget.js";
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
+
+  const openCalendly = () => {
+    window.Calendly.initPopupWidget({
+      url: "https://calendly.com/hamzamalik246810/30min",
+    });
+  };
+
   return (
     <div
       className="intro flex flex-col lg:flex-row items-center justify-around bg-[#648999] relative overflow-hidden "
@@ -75,9 +89,14 @@ const Intro = () => {
           </a>
           
         </Motion.div>
-        <button className="bg-[#08374A] txt text-lg font-medium text-white px-10 py-3 rounded-lg my-4 mx-auto">
-            Book a call
-          </button>
+        <button
+  className="bg-[#08374A] txt text-lg font-medium text-white px-10 py-3 rounded-lg my-4 mx-auto"
+  style={{cursor:'pointer'}}
+  onClick={openCalendly}
+>
+  Book a call
+</button>
+
       </div>
 
     </div>

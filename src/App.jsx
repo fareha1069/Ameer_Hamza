@@ -1,8 +1,4 @@
 import React from 'react';
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 import { BrowserRouter ,Routes , Route, createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Navbar  from './Components/LandingComponents/Navbar'
 import Project from './Components/AllProjects/ProjectPage'

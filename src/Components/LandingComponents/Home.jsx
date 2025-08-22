@@ -29,11 +29,11 @@ const recommend = [
     text: "Ameer it’s great with anything related to Amazon. Full of knowledge and willing to explain everything! I would highly recommend Ameer!",
     date: "18/08/2024"
   },
-  {
-    name: "The Ridge",
-    image: ridge,
-    date: "10/02/2025"
-  }
+  // {
+  //   name: "The Ridge",
+  //   image: ridge,
+  //   date: "10/02/2025"
+  // }
 ]
 
 const title = "My Services"
