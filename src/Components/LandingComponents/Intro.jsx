@@ -1,28 +1,13 @@
-import {React, useEffect } from 'react';
+import {React} from 'react';
 import Pic from '../../assets/Intro/pic.png';
-// import pics from '../assets/im'
 import bg from '../../assets/Intro/bg.png';
 import { motion as Motion } from 'motion/react';
 import { Icon } from '@iconify/react';
 import './Intro.css';
-import AnimatedBackground from './AnimatedBackground'; // import the new background
-// import Servicediv from './Servicediv'
+import AnimatedBackground from './AnimatedBackground'; 
+import { PopupButton } from "react-calendly";
 
 const Intro = () => {
-
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://assets.calendly.com/assets/external/widget.js";
-    script.async = true;
-    document.body.appendChild(script);
-  }, []);
-
-  const openCalendly = () => {
-    window.Calendly.initPopupWidget({
-      url: "https://calendly.com/hamzamalik246810/30min",
-    });
-  };
-
   return (
     <div
       className="intro flex flex-col lg:flex-row items-center justify-around bg-[#648999] relative overflow-hidden "
@@ -89,13 +74,12 @@ const Intro = () => {
           </a>
           
         </Motion.div>
-        <button
-  className="bg-[#08374A] txt text-lg font-medium text-white px-10 py-3 rounded-lg my-4 mx-auto"
-  style={{cursor:'pointer'}}
-  onClick={openCalendly}
->
-  Book a call
-</button>
+        <PopupButton
+      url="https://calendly.com/hamzamalik246810/30min"
+      rootElement={document.getElementById("root") || document.body}
+      text="Book a Call"
+      className="bg-[#08374A] text-white px-10 py-3 rounded-lg"
+    />
 
       </div>
 
