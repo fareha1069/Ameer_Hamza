@@ -67,9 +67,6 @@ const Intro = () => {
           <a href="https://www.upwork.com/freelancers/~0176f60b60aa754ea3?viewMode=1" target="_blank" rel="noreferrer" className="flex items-center">
             <Icon icon="simple-icons:upwork" width="32" height="32"className="text-[#08374A]"/>
           </a>
-          <a href="https://facebook.com" target="_blank" rel="noreferrer">
-            <Icon icon="logos:facebook" width="32" height="32" />
-          </a>
           <a href="https://www.instagram.com/ameer_hamza_ilyas/" target="_blank" rel="noreferrer">
             <Icon icon="skill-icons:instagram" width="36" height="36" />
           </a>
