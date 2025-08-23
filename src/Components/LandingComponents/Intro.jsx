@@ -24,6 +24,7 @@ const Intro = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 2.5, ease: 'easeInOut' }}
+          loading='lazy'
         />
       </div>
       {/* <div>{}</div> */}
