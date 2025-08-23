@@ -4,7 +4,6 @@ import { Icon } from "@iconify/react";
 const ServiceCard = ({ icon, title, description, link }) => {
   return (
     <motion.div
-
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.1, ease: "easeOut" }}
@@ -15,15 +14,13 @@ const ServiceCard = ({ icon, title, description, link }) => {
           w-full sm:w-[90%] md:w-[90%] lg:w-[28vw] min-h-[40vh]"
 
     >
-
-
       <div className="flex justify-center mb-4">
         <motion.img
           src={icon}
           alt={`${title} icon`}
           className="h-25 w-25 object-contain"
-
         />
+        
       </div>
       <h2 className="text-lg font-semibold text-gray-800 mb-2">{title}</h2>
       <p className="text-sm text-gray-600">{description}</p>

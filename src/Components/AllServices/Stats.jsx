@@ -58,10 +58,10 @@ const Stats = () => {
   return (
     <div className="flex flex-col lg:flex-row justify-evenly gap-4">
       <Card className="bg-[#648999] w-[90vw] h-[170px] lg:w-[30vw] !border-[#08374A] border-b-4">
-        <CardContent className="flex flex-col justify-around h-full overflow-y-auto">
+        <CardContent className="flex flex-col justify-evenly h-full overflow-y-auto">
           <Motion.h1
             ref={expRef}
-            className="title text-3xl md:text-4xl lg:text-4xl xl:text-5xl text-center font-bold text-[#092936] tracking-tight leading-[1.5] bg-clip-text text-transparent inline-block bg-[length:300%_300%] mb-2"
+            className="title text-5xl xl:text-6xl text-center font-bold text-[#092936] tracking-tight leading-[1.5] bg-clip-text text-transparent inline-block bg-[length:300%_300%]"
             style={{ fontFamily: "Oswald, monospace" }}
             animate={{ backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"] }}
             transition={{
@@ -84,10 +84,10 @@ const Stats = () => {
       </Card>
 
       <Card className="bg-[#648999] w-[90vw] h-[170px] lg:w-[30vw] !border-[#08374A] border-b-4">
-        <CardContent className="flex flex-col justify-around h-full overflow-y-auto">
+        <CardContent className="flex flex-col justify-evenly h-full overflow-y-auto">
           <Motion.h1
             ref={proRef}
-            className="title text-3xl md:text-4xl lg:text-4xl xl:text-5xl text-center font-bold text-[#092936] tracking-tight leading-[1.5] bg-clip-text text-transparent inline-block bg-[length:300%_300%] mb-2"
+            className="title text-5xl xl:text-6xl text-center font-bold text-[#092936] tracking-tight leading-[1.5] bg-clip-text text-transparent inline-block bg-[length:300%_300%]"
             style={{ fontFamily: "Oswald, monospace" }}
             animate={{ backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"] }}
             transition={{
@@ -104,10 +104,10 @@ const Stats = () => {
         </CardContent>
       </Card>
       <Card className="bg-[#648999] w-[90vw] h-[170px] lg:w-[30vw] !border-[#08374A] border-b-4">
-        <CardContent className="flex flex-col justify-around h-full overflow-y-auto">
+        <CardContent className="flex flex-col justify-evenly h-full overflow-y-auto">
           <Motion.h1
             ref={recRef}
-            className="title text-3xl md:text-4xl lg:text-4xl xl:text-5xl text-center font-bold text-[#092936] tracking-tight leading-[1.5] bg-clip-text text-transparent inline-block bg-[length:300%_300%] mb-2"
+            className="title text-5xl xl:text-6xl text-center font-bold text-[#092936] tracking-tight leading-[1.5] bg-clip-text text-transparent inline-block bg-[length:300%_300%]"
             style={{ fontFamily: "Oswald, monospace" }}
             animate={{ backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"] }}
             transition={{
