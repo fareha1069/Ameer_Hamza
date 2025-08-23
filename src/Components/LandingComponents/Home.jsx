@@ -41,7 +41,6 @@ const Home = () => {
   return (
     <div>
       <Intro />
-      blii bluu
       <LandingServices title = {title}/>
       <LandingExperience/>
       <TrustedBy />
