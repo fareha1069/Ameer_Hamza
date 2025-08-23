@@ -11,6 +11,7 @@ import img8 from "../../assets/Projects/ListingM/img8.png";
 
 
 const title = "Amazon Listing Management"
+const desc = "As a dedicated professional, I take pride in managing the Amazon listings. My responsibilities encompass the end-to-end process, from listing creation and optimization to monitoring performance and ensuring accurate product information. By meticulously crafting listings, optimizing, and enhancing product images, I've improved the conversion rates. My hands-on approach extends to managing inventory, handling customer reviews, and swiftly addressing any issues that arise. Through data-driven strategies and continuous monitoring, I've consistently maintained high-quality listings that resonate with customers and contribute to overall business success.";
 const skills = [
   "Amazon Listing",
   "Amazon Private Label",
@@ -73,7 +74,7 @@ const project = {
 
 const AmazonListing = () => {
   return (
-    <ProjectGen title={title} skills={skills} responsibilities={responsibilities} project={project} />
+    <ProjectGen title={title} desc={desc} skills={skills} responsibilities={responsibilities} project={project} />
   );
 };
 export default AmazonListing;

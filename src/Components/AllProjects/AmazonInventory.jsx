@@ -10,6 +10,16 @@ import img7 from "../../assets/Projects/Inventory/img7.png";
 import img8 from "../../assets/Projects/Inventory/img8.png";
 
 const title = "Amazon Inventory Reconciliation and Reimbursements";
+const desc = `I have successfully reconciled inventory for 8 Amazon brands across diverse marketplaces and secured reimbursements through well-documented claims. My experience includes filing claims for a wide range of issues, such as:
+- Inbound discrepancies
+- FBA damages
+- Carrier destruction
+- Lost and misplaced inventory
+- Returns
+- Unused shipping labels
+- Incorrect weight/dimensions
+I am committed to maximizing client funds by ensuring accurate inventory management and effective reimbursement recovery. For example, I successfully obtained a reimbursement of over $27,000 for The Ridge within a single month. While I cannot disclose details for other brands due to confidentiality, my proven track record highlights my ability to optimize financial outcomes for clients on the Amazon platform.`;
+
 const skills = [
   "Ecommerce",
   "Account Reconciliation",
@@ -65,7 +75,7 @@ const project = {
 
 const AmazonInventory = () => {
   return (
-    <ProjectGen title={title} skills={skills} responsibilities={responsibilities} project={project} />
+    <ProjectGen title={title} desc={desc} skills={skills} responsibilities={responsibilities} project={project} />
   );
 };
 export default AmazonInventory;

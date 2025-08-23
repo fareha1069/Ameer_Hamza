@@ -5,6 +5,7 @@ import img2 from "../../assets/Projects/Consultation/img2.png";
 import img3 from "../../assets/Projects/Consultation/img3.png";
 
 const title = "Consultation to 3PL for Prime Day FBA Shipment"
+const desc = `I provided key advice to a 3PL shipping to FBA for the first time. I shared packing info on a call and labeling details through email, making sure everything met Amazon's rules. I also arranged a pickup by UPS to ensure their FBA stock was ready. This was crucial for Prime Day on July 11, 2023. I even worked on this project on a Saturday to meet their rush. My help prevented problems for their business and set them up well for Prime Day success.`;
 const skills = [
   "Third-Party Logistics (3PL)",
   "Warehouse Management",
@@ -43,7 +44,7 @@ const project = {
 
 const Consultation = () => {
   return (
-    <ProjectGen title={title} skills={skills} responsibilities={responsibilities} project={project} />
+    <ProjectGen title={title} desc={desc} skills={skills} responsibilities={responsibilities} project={project} />
   );
 };
 export default Consultation;

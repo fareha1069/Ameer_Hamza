@@ -14,6 +14,7 @@ import img11 from "../../assets/Projects/Purchase/img11.png";
 import img12 from "../../assets/Projects/Purchase/img12.png";
 
 const title = "Purchase Order Management"
+const desc = `I'm experienced in handling production orders for over 5 brands. I communicate with suppliers about production and quality. I utilize my Excel model to monitor the progress of order statuses, while also meticulously recording crucial documents and purchase order information within the same model. Smooth delivery and receipt of shipments are my focus, and I file claims when discrepancies arise. My attention to detail ensures successful production and a smooth supply chain. I'm sharing a few documents for reference, while some remain confidential due to privacy reasons.`;
 const skills = [
   "Order Management",
   "Procurement",
@@ -83,7 +84,7 @@ const project = {
 
 const PurchaseOrder = () => {
   return (
-    <ProjectGen title={title} skills={skills} responsibilities={responsibilities} project={project} />
+    <ProjectGen title={title} desc={desc} skills={skills} responsibilities={responsibilities} project={project} />
   );
 };
 export default PurchaseOrder;

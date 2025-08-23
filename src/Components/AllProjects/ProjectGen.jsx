@@ -5,7 +5,7 @@ import bg from "../../assets/Intro/bg.png";
 import ProjectImages from "./ProjectImages";
 import Contact from "../../Components/LandingComponents/Contact";
 
-const ProjectPage = ({ title, skills, responsibilities, project }) => {
+const ProjectPage = ({ title, desc, skills, responsibilities, project }) => {
   return (
     <div>
       <Motion.div
@@ -32,13 +32,7 @@ const ProjectPage = ({ title, skills, responsibilities, project }) => {
               {title}
             </Motion.h1>
             <p className="text-[#092936] text-base md:text-lg leading-relaxed">
-              short desc Lorem ipsum dolor sit, amet consectetur adipisicing
-              elit. Excepturi, ad. Cum cupiditate voluptas ratione explicabo,
-              iusto rem. Cum vel recusandae ducimus. Perspiciatis labore fugit
-              aperiam voluptates, officia numquam quaerat, voluptas maiores
-              perferendis animi suscipit sit quidem tempora itaque nam veritatis
-              quae quas ut. Esse inventore delectus asperiores reprehenderit,
-              possimus nesciunt?
+              {desc}
             </p>
 
             <div className="w-full">

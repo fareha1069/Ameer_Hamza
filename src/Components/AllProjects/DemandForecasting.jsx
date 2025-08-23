@@ -12,6 +12,7 @@ import img9 from "../../assets/Projects/Demand/img9.png";
 import img10 from "../../assets/Projects/Demand/img10.png";
 
 const title = "Demand Forecasting"
+const desc = "With a strong track record, I excel in demand planning and forecasting for FBA brands, successfully managing 20+ brands to date. My proficiency lies in demand planning and inventory forecasting through efficient projection models, ensuring optimal stock levels and minimizing excess inventory. Collaborating closely with suppliers, I project inventory for FBA replenishments and production orders, and for some brands, I manage inventory replenishment directly from China. These efforts result in impressive IPI scores and in-stock metrics for the brands under my management. My expertise in supply chain optimization is evident through tangible results and operational efficiency, significantly contributing to the success and growth of the brands I work with."
 const skills = [
   "Demand Planning",
   "Forecasting",
@@ -83,7 +84,7 @@ const project = {
 
 const DemandForecasting = () => {
   return (
-    <ProjectGen title={title} skills={skills} responsibilities={responsibilities} project={project} />
+    <ProjectGen title={title} desc={desc} skills={skills} responsibilities={responsibilities} project={project} />
   );
 };
 export default DemandForecasting;
