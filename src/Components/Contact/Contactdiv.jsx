@@ -13,18 +13,37 @@ const Contactdiv = () => {
     // data contains values from react-hook-form
     emailjs
       .send(
-        "service_ow6pw59",   // EmailJS Service ID
-        "template_1hfnqfr",  // EmailJS Template ID
+        "service_zf8rgq9",   // EmailJS Service ID
+        "template_ykinqdh",  // EmailJS Template ID
         {
           from_name: data.name,
           from_email: data.email,
-          company: data.Company,
+          company: data.company,
           message: data.msg,
         },
         "5kd7AmFUJ-_TKh5Dt"    // EmailJS Public Key
       )
       .then((result) => {
-        console.log("Message sent: ", result.text);
+        console.log("Message sent to hamza: ", result.text);
+        // toast.success("Message sent successfully!");
+      })
+      .catch((error) => {
+        console.log("Error: ", error.text);
+        // toast.error("Something went wrong!");
+      });
+
+      emailjs.send(
+        "service_zf8rgq9",
+        "template_rg9mg1x",
+        {
+          from_name: data.name,
+          from_email: data.email,
+          company: data.company,
+          message: data.msg,
+        }
+        ,"5kd7AmFUJ-_TKh5Dt"
+      ).then((result) => {
+        console.log("Message sent to sender: ", result.text);
         // toast.success("Message sent successfully!");
       })
       .catch((error) => {
