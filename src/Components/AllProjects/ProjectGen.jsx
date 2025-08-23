@@ -20,7 +20,7 @@ const ProjectPage = ({ title, desc, skills, responsibilities, project }) => {
             {/* Title */}
 
             <Motion.h1
-              className="title text-2xl md:text-3xl lg:text-4xl xl:text-4xl text-center font-bold text-[#092936] tracking-tight leading-[1.5] bg-clip-text text-transparent inline-block bg-[length:300%_300%] mb-2"
+              className="title text-3xl md:text-5xl lg:text-5xl xl:text-6xl text-center font-bold text-[#092936] tracking-tight leading-[1.5] bg-clip-text text-transparent inline-block bg-[length:300%_300%] mb-2"
               style={{ fontFamily: "Oswald, monospace" }}
               animate={{ backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"] }}
               transition={{
